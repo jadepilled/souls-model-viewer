@@ -1,0 +1,408 @@
+[
+  {
+    "Name": "Anklet of the Great Lord",
+    "PHY": 15, "STR": 16.2, "SLA": 17.3, "THR": 13.8,
+    "Mag": 15, "Fire": 19, "Lghtng": 19,
+    "Bld": 14, "Psn": 7, "Curse": 18,
+    "Pse": 0, "Wt": 2.8, "P:W": 0
+  },
+  {
+    "Name": "Antiquated Skirt",
+    "PHY": 15, "STR": 15, "SLA": 15, "THR": 15,
+    "Mag": 35, "Fire": 17, "Lghtng": 21,
+    "Bld": 20, "Psn": 20, "Curse": 52,
+    "Pse": 0, "Wt": 3, "P:W": 0
+  },
+  {
+    "Name": "Balder Leggings",
+    "PHY": 22, "STR": 21.6, "SLA": 26.8, "THR": 21.1,
+    "Mag": 10, "Fire": 12, "Lghtng": 9,
+    "Bld": 12, "Psn": 9, "Curse": 0,
+    "Pse": 9, "Wt": 6.4, "P:W": 1.4
+  },
+  {
+    "Name": "Black Iron Leggings",
+    "PHY": 40, "STR": 38, "SLA": 46, "THR": 40,
+    "Mag": 17, "Fire": 30, "Lghtng": 13,
+    "Bld": 25, "Psn": 14, "Curse": 8,
+    "Pse": 18, "Wt": 9.2, "P:W": 2
+  },
+  {
+    "Name": "Black Knight Leggings",
+    "PHY": 30, "STR": 28.5, "SLA": 33.9, "THR": 29.4,
+    "Mag": 15, "Fire": 26, "Lghtng": 9,
+    "Bld": 17, "Psn": 9, "Curse": 0,
+    "Pse": 11, "Wt": 7, "P:W": 1.6
+  },
+  {
+    "Name": "Black Leather Boots",
+    "PHY": 12, "STR": 12.8, "SLA": 12, "THR": 12,
+    "Mag": 19, "Fire": 13, "Lghtng": 15,
+    "Bld": 23, "Psn": 31, "Curse": 0,
+    "Pse": 0, "Wt": 3, "P:W": 0
+  },
+  {
+    "Name": "Black Sorcerer Boots",
+    "PHY": 8, "STR": 8.2, "SLA": 8.7, "THR": 8,
+    "Mag": 17, "Fire": 12, "Lghtng": 12,
+    "Bld": 18, "Psn": 18, "Curse": 2,
+    "Pse": 0, "Wt": 1, "P:W": 0
+  },
+  {
+    "Name": "Black Tights",
+    "PHY": 16, "STR": 17.4, "SLA": 16, "THR": 16,
+    "Mag": 22, "Fire": 17, "Lghtng": 13,
+    "Bld": 15, "Psn": 15, "Curse": 9,
+    "Pse": 0, "Wt": 2.8, "P:W": 0
+  },
+  {
+    "Name": "Blood-Stained Skirt",
+    "PHY": 13, "STR": 16.3, "SLA": 13, "THR": 13,
+    "Mag": 27, "Fire": 16, "Lghtng": 21,
+    "Bld": 29, "Psn": 22, "Curse": 29,
+    "Pse": 0, "Wt": 2.5, "P:W": 0
+  },
+  {
+    "Name": "Boots of the Explorer",
+    "PHY": 14, "STR": 13.3, "SLA": 16.1, "THR": 14,
+    "Mag": 10, "Fire": 11, "Lghtng": 7,
+    "Bld": 8, "Psn": 6, "Curse": 5,
+    "Pse": 6, "Wt": 4, "P:W": 1.5
+  },
+  {
+    "Name": "Brass Leggings",
+    "PHY": 26, "STR": 25, "SLA": 29.4, "THR": 26,
+    "Mag": 16, "Fire": 15, "Lghtng": 15,
+    "Bld": 14, "Psn": 12, "Curse": 7,
+    "Pse": 9, "Wt": 6.4, "P:W": 1.4
+  },
+  {
+    "Name": "Brigand Trousers",
+    "PHY": 14, "STR": 15.4, "SLA": 14, "THR": 12.6,
+    "Mag": 12, "Fire": 8, "Lghtng": 10,
+    "Bld": 12, "Psn": 12, "Curse": 0,
+    "Pse": 0, "Wt": 1.8, "P:W": 0
+  },
+  {
+    "Name": "Catarina Leggings",
+    "PHY": 34, "STR": 33.7, "SLA": 39.1, "THR": 34,
+    "Mag": 18, "Fire": 21, "Lghtng": 12,
+    "Bld": 21, "Psn": 13, "Curse": 0,
+    "Pse": 13, "Wt": 6.9, "P:W": 1.9
+  },
+  {
+    "Name": "Chain Leggings",
+    "PHY": 18, "STR": 18, "SLA": 21.6, "THR": 17.5,
+    "Mag": 14, "Fire": 12, "Lghtng": 5,
+    "Bld": 15, "Psn": 9, "Curse": 0,
+    "Pse": 7, "Wt": 4.6, "P:W": 1.5
+  },
+  {
+    "Name": "Chester's Trousers",
+    "PHY": 19, "STR": 25.7, "SLA": 19, "THR": 19,
+    "Mag": 21, "Fire": 15, "Lghtng": 20,
+    "Bld": 31, "Psn": 23, "Curse": 0,
+    "Pse": 0, "Wt": 3.2, "P:W": 0
+  },
+  {
+    "Name": "Cleric Leggings",
+    "PHY": 24, "STR": 24, "SLA": 27.6, "THR": 24,
+    "Mag": 13, "Fire": 12, "Lghtng": 9,
+    "Bld": 14, "Psn": 9, "Curse": 0,
+    "Pse": 12, "Wt": 7.4, "P:W": 1.6
+  },
+  {
+    "Name": "Crimson Waistcloth",
+    "PHY": 29, "STR": 31.9, "SLA": 29, "THR": 29,
+    "Mag": 29, "Fire": 17, "Lghtng": 21,
+    "Bld": 19, "Psn": 19, "Curse": 19,
+    "Pse": 0, "Wt": 3.5, "P:W": 0
+  },
+  {
+    "Name": "Crystalline Leggings",
+    "PHY": 37, "STR": 31.5, "SLA": 42.6, "THR": 37,
+    "Mag": 12, "Fire": 9, "Lghtng": 4,
+    "Bld": 9, "Psn": 0, "Curse": 0,
+    "Pse": 9, "Wt": 6.4, "P:W": 1.4
+  },
+  {
+    "Name": "Dark Leggings",
+    "PHY": 27, "STR": 27, "SLA": 29.7, "THR": 25.4,
+    "Mag": 18, "Fire": 18, "Lghtng": 15,
+    "Bld": 18, "Psn": 12, "Curse": 0,
+    "Pse": 9, "Wt": 5.8, "P:W": 1.6
+  },
+  {
+    "Name": "Eastern Leggings",
+    "PHY": 15, "STR": 14.3, "SLA": 18.6, "THR": 14.6,
+    "Mag": 5, "Fire": 11, "Lghtng": 6,
+    "Bld": 12, "Psn": 10, "Curse": 0,
+    "Pse": 6, "Wt": 4, "P:W": 1.5
+  },
+  {
+    "Name": "Elite Cleric Leggings",
+    "PHY": 24, "STR": 24, "SLA": 27, "THR": 24,
+    "Mag": 13, "Fire": 12, "Lghtng": 9,
+    "Bld": 14, "Psn": 9, "Curse": 0,
+    "Pse": 14, "Wt": 7.8, "P:W": 1.8
+  },
+  {
+    "Name": "Elite Knight Leggings",
+    "PHY": 23, "STR": 22.3, "SLA": 26.7, "THR": 23,
+    "Mag": 11, "Fire": 11, "Lghtng": 9,
+    "Bld": 14, "Psn": 9, "Curse": 0,
+    "Pse": 12, "Wt": 6.9, "P:W": 1.7
+  },
+  {
+    "Name": "Giant Leggings",
+    "PHY": 41, "STR": 37.7, "SLA": 46.3, "THR": 41,
+    "Mag": 19, "Fire": 29, "Lghtng": 19,
+    "Bld": 19, "Psn": 11, "Curse": 0,
+    "Pse": 21, "Wt": 9.7, "P:W": 2.2
+  },
+  {
+    "Name": "Gold-Hemmed Black Skirt",
+    "PHY": 23, "STR": 24.6, "SLA": 23, "THR": 23,
+    "Mag": 27, "Fire": 49, "Lghtng": 17,
+    "Bld": 32, "Psn": 78, "Curse": 0,
+    "Pse": 0, "Wt": 3, "P:W": 0
+  },
+  {
+    "Name": "Golem Leggings",
+    "PHY": 54, "STR": 49.7, "SLA": 63.2, "THR": 54,
+    "Mag": 25, "Fire": 23, "Lghtng": 10,
+    "Bld": 27, "Psn": 17, "Curse": 0,
+    "Pse": 20, "Wt": 9.7, "P:W": 2.1
+  },
+  {
+    "Name": "Gough's Leggings",
+    "PHY": 31, "STR": 31, "SLA": 32.6, "THR": 29.5,
+    "Mag": 17, "Fire": 25, "Lghtng": 13,
+    "Bld": 13, "Psn": 7, "Curse": 0,
+    "Pse": 13, "Wt": 8, "P:W": 1.6
+  },
+  {
+    "Name": "Guardian Leggings",
+    "PHY": 54, "STR": 50.8, "SLA": 62.1, "THR": 54,
+    "Mag": 33, "Fire": 27, "Lghtng": 33,
+    "Bld": 27, "Psn": 10, "Curse": 0,
+    "Pse": 23, "Wt": 10.4, "P:W": 2.2
+  },
+  {
+    "Name": "Hard Leather Boots",
+    "PHY": 13, "STR": 13.8, "SLA": 13, "THR": 13,
+    "Mag": 12, "Fire": 7, "Lghtng": 13,
+    "Bld": 14, "Psn": 12, "Curse": 0,
+    "Pse": 0, "Wt": 3.5, "P:W": 0
+  },
+  {
+    "Name": "Havel's Leggings",
+    "PHY": 54, "STR": 45.9, "SLA": 62.1, "THR": 54,
+    "Mag": 32, "Fire": 32, "Lghtng": 29,
+    "Bld": 27, "Psn": 5, "Curse": 13,
+    "Pse": 28, "Wt": 11.5, "P:W": 2.4
+  },
+  {
+    "Name": "Heavy Boots",
+    "PHY": 12, "STR": 13.3, "SLA": 12, "THR": 12,
+    "Mag": 14, "Fire": 18, "Lghtng": 10,
+    "Bld": 14, "Psn": 35, "Curse": 1,
+    "Pse": 0, "Wt": 1.6, "P:W": 0
+  },
+  {
+    "Name": "Hollow Soldier Waistcloth",
+    "PHY": 13, "STR": 13, "SLA": 14.4, "THR": 11.4,
+    "Mag": 8, "Fire": 8, "Lghtng": 6,
+    "Bld": 10, "Psn": 6, "Curse": 0,
+    "Pse": 7, "Wt": 1.5, "P:W": 4.7
+  },
+  {
+    "Name": "Hollow Thief's Tights",
+    "PHY": 12, "STR": 13.1, "SLA": 12, "THR": 12.5,
+    "Mag": 11, "Fire": 8, "Lghtng": 10,
+    "Bld": 9, "Psn": 17, "Curse": 0,
+    "Pse": 0, "Wt": 1.7, "P:W": 0
+  },
+  {
+    "Name": "Hollow Warrior Waistcloth",
+    "PHY": 13, "STR": 12.6, "SLA": 13.4, "THR": 12.3,
+    "Mag": 8, "Fire": 6, "Lghtng": 8,
+    "Bld": 6, "Psn": 6, "Curse": 0,
+    "Pse": 5, "Wt": 1.4, "P:W": 3.6
+  },
+  {
+    "Name": "Holy Trousers",
+    "PHY": 14, "STR": 16.5, "SLA": 14, "THR": 14,
+    "Mag": 15, "Fire": 8, "Lghtng": 12,
+    "Bld": 15, "Psn": 13, "Curse": 0,
+    "Pse": 0, "Wt": 2, "P:W": 0
+  },
+  {
+    "Name": "Iron Leggings",
+    "PHY": 21, "STR": 21, "SLA": 21, "THR": 20.6,
+    "Mag": 12, "Fire": 12, "Lghtng": 11,
+    "Bld": 14, "Psn": 9, "Curse": 2,
+    "Pse": 9, "Wt": 5.3, "P:W": 1.7
+  },
+  {
+    "Name": "Knight Leggings",
+    "PHY": 22, "STR": 20.9, "SLA": 25.5, "THR": 21.6,
+    "Mag": 10, "Fire": 11, "Lghtng": 8,
+    "Bld": 14, "Psn": 9, "Curse": 0,
+    "Pse": 12, "Wt": 6.4, "P:W": 1.9
+  },
+  {
+    "Name": "Leather Boots",
+    "PHY": 12, "STR": 12.7, "SLA": 12, "THR": 12,
+    "Mag": 12, "Fire": 6, "Lghtng": 13,
+    "Bld": 13, "Psn": 12, "Curse": 0,
+    "Pse": 0, "Wt": 2.8, "P:W": 0
+  },
+  {
+    "Name": "Leggings of Artorias",
+    "PHY": 23, "STR": 20.7, "SLA": 26.5, "THR": 24.2,
+    "Mag": 11, "Fire": 24, "Lghtng": 11,
+    "Bld": 11, "Psn": 11, "Curse": 10,
+    "Pse": 9, "Wt": 5.5, "P:W": 1.6
+  },
+  {
+    "Name": "Leggings of Favor",
+    "PHY": 28, "STR": 26.6, "SLA": 32.5, "THR": 28,
+    "Mag": 14, "Fire": 18, "Lghtng": 11,
+    "Bld": 15, "Psn": 14, "Curse": 14,
+    "Pse": 11, "Wt": 6.9, "P:W": 1.6
+  },
+  {
+    "Name": "Leggings of Thorns",
+    "PHY": 26, "STR": 24.7, "SLA": 28.3, "THR": 26,
+    "Mag": 16, "Fire": 18, "Lghtng": 12,
+    "Bld": 16, "Psn": 10, "Curse": 0,
+    "Pse": 9, "Wt": 6.2, "P:W": 1.5
+  },
+  {
+    "Name": "Lord's Blade Waistcloth",
+    "PHY": 27, "STR": 27, "SLA": 28.4, "THR": 29.7,
+    "Mag": 20, "Fire": 25, "Lghtng": 16,
+    "Bld": 22, "Psn": 38, "Curse": 20,
+    "Pse": 6, "Wt": 5, "P:W": 1.2
+  },
+  {
+    "Name": "Mage Smith Boots",
+    "PHY": 12, "STR": 13, "SLA": 12.5, "THR": 12,
+    "Mag": 16, "Fire": 8, "Lghtng": 10,
+    "Bld": 9, "Psn": 7, "Curse": 0,
+    "Pse": 0, "Wt": 1.4, "P:W": 0
+  },
+  {
+    "Name": "Maiden Skirt",
+    "PHY": 14, "STR": 16.4, "SLA": 14, "THR": 14,
+    "Mag": 27, "Fire": 16, "Lghtng": 21,
+    "Bld": 29, "Psn": 22, "Curse": 10,
+    "Pse": 0, "Wt": 2.5, "P:W": 0
+  },
+  {
+    "Name": "Moonlight Waistcloth",
+    "PHY": 12, "STR": 12, "SLA": 12, "THR": 12,
+    "Mag": 18, "Fire": 10, "Lghtng": 10,
+    "Bld": 14, "Psn": 14, "Curse": 18,
+    "Pse": 0, "Wt": 1.8, "P:W": 0
+  },
+  {
+    "Name": "Ornstein's Leggings",
+    "PHY": 40, "STR": 38, "SLA": 45.2, "THR": 40,
+    "Mag": 20, "Fire": 28, "Lghtng": 24,
+    "Bld": 22, "Psn": 12, "Curse": 12,
+    "Pse": 11, "Wt": 7, "P:W": 1.6
+  },
+  {
+    "Name": "Painting Guardian Waistcloth",
+    "PHY": 22, "STR": 26.4, "SLA": 22, "THR": 22,
+    "Mag": 30, "Fire": 22, "Lghtng": 21,
+    "Bld": 21, "Psn": 51, "Curse": 10,
+    "Pse": 0, "Wt": 4, "P:W": 0
+  },
+  {
+    "Name": "Paladin Leggings",
+    "PHY": 35, "STR": 33.3, "SLA": 40.3, "THR": 35,
+    "Mag": 19, "Fire": 21, "Lghtng": 12,
+    "Bld": 21, "Psn": 13, "Curse": 34,
+    "Pse": 12, "Wt": 7.6, "P:W": 1.6
+  },
+  {
+    "Name": "Shadow Leggings",
+    "PHY": 13, "STR": 14.3, "SLA": 13, "THR": 13,
+    "Mag": 7, "Fire": 9, "Lghtng": 10,
+    "Bld": 23, "Psn": 28, "Curse": 0,
+    "Pse": 0, "Wt": 1.4, "P:W": 0
+  },
+  {
+    "Name": "Silver Knight Leggings",
+    "PHY": 28, "STR": 26.3, "SLA": 32.2, "THR": 27.4,
+    "Mag": 15, "Fire": 16, "Lghtng": 19,
+    "Bld": 14, "Psn": 7, "Curse": 1,
+    "Pse": 11, "Wt": 6.5, "P:W": 1.7
+  },
+  {
+    "Name": "Smough's Leggings",
+    "PHY": 61, "STR": 53.1, "SLA": 70.2, "THR": 61,
+    "Mag": 31, "Fire": 40, "Lghtng": 33,
+    "Bld": 33, "Psn": 16, "Curse": 5,
+    "Pse": 21, "Wt": 10.4, "P:W": 2
+  },
+  {
+    "Name": "Sorcerer Boots",
+    "PHY": 12, "STR": 13, "SLA": 12.5, "THR": 12,
+    "Mag": 16, "Fire": 8, "Lghtng": 10,
+    "Bld": 9, "Psn": 7, "Curse": 0,
+    "Pse": 0, "Wt": 1.4, "P:W": 0
+  },
+  {
+    "Name": "Steel Leggings",
+    "PHY": 25, "STR": 23.5, "SLA": 28.8, "THR": 25,
+    "Mag": 13, "Fire": 12, "Lghtng": 8,
+    "Bld": 14, "Psn": 9, "Curse": 0,
+    "Pse": 14, "Wt": 8.3, "P:W": 1.7
+  },
+  {
+    "Name": "Stone Leggings",
+    "PHY": 54, "STR": 50.8, "SLA": 62.1, "THR": 54,
+    "Mag": 27, "Fire": 33, "Lghtng": 33,
+    "Bld": 27, "Psn": 10, "Curse": 0,
+    "Pse": 23, "Wt": 10.4, "P:W": 2.2
+  },
+  {
+    "Name": "Traveling Boots",
+    "PHY": 12, "STR": 13, "SLA": 12.5, "THR": 12,
+    "Mag": 16, "Fire": 8, "Lghtng": 10,
+    "Bld": 14, "Psn": 14, "Curse": 0,
+    "Pse": 0, "Wt": 1.6, "P:W": 0
+  },
+  {
+    "Name": "Waistcloth of the Channelers",
+    "PHY": 32, "STR": 30.7, "SLA": 36.5, "THR": 32,
+    "Mag": 27, "Fire": 27, "Lghtng": 20,
+    "Bld": 23, "Psn": 20, "Curse": 0,
+    "Pse": 7, "Wt": 6, "P:W": 1.2
+  },
+  {
+    "Name": "Wanderer Boots",
+    "PHY": 14, "STR": 15, "SLA": 15, "THR": 14,
+    "Mag": 12, "Fire": 15, "Lghtng": 13,
+    "Bld": 13, "Psn": 13, "Curse": 0,
+    "Pse": 0, "Wt": 2.1, "P:W": 0
+  },
+  {
+    "Name": "Witch Skirt",
+    "PHY": 17, "STR": 18.9, "SLA": 17, "THR": 17,
+    "Mag": 27, "Fire": 12, "Lghtng": 17,
+    "Bld": 23, "Psn": 28, "Curse": 8,
+    "Pse": 0, "Wt": 2.5, "P:W": 0
+  },
+  {
+    "Name": "Xanthous Waistcloth",
+    "PHY": 32, "STR": 35.8, "SLA": 32, "THR": 29.1,
+    "Mag": 39, "Fire": 7, "Lghtng": 23,
+    "Bld": 22, "Psn": 30, "Curse": 0,
+    "Pse": 0, "Wt": 4, "P:W": 0
+  }
+]

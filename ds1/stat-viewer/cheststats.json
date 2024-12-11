@@ -1,0 +1,408 @@
+[
+  {
+    "Name": "Antiquated Dress",
+    "PHY": 14, "STR": 14, "SLA": 14, "THR": 14,
+    "Mag": 33, "Fire": 6, "Lghtng": 19,
+    "Bld": 14, "Psn": 14, "Curse": 26,
+    "Pse": 0, "Wt": 1, "P:W": 0
+  },
+  {
+    "Name": "Armor of Artorias",
+    "PHY": 42, "STR": 37.8, "SLA": 48.3, "THR": 44.1,
+    "Mag": 22, "Fire": 46, "Lghtng": 22,
+    "Bld": 22, "Psn": 22, "Curse": 20,
+    "Pse": 15, "Wt": 10.5, "P:W": 1.4
+  },
+  {
+    "Name": "Armor of the Glorious",
+    "PHY": 47, "STR": 44.6, "SLA": 54.1, "THR": 47,
+    "Mag": 31, "Fire": 34, "Lghtng": 25,
+    "Bld": 28, "Psn": 19, "Curse": 24,
+    "Pse": 20, "Wt": 13.3, "P:W": 1.5
+  },
+  {
+    "Name": "Armor of the Sun",
+    "PHY": 35, "STR": 35, "SLA": 35, "THR": 34.3,
+    "Mag": 21, "Fire": 21, "Lghtng": 19,
+    "Bld": 23, "Psn": 16, "Curse": 10,
+    "Pse": 16, "Wt": 9, "P:W": 1.8
+  },
+  {
+    "Name": "Armor of Thorns",
+    "PHY": 45, "STR": 42.8, "SLA": 49.1, "THR": 45,
+    "Mag": 28, "Fire": 33, "Lghtng": 20,
+    "Bld": 26, "Psn": 18, "Curse": 0,
+    "Pse": 16, "Wt": 10.5, "P:W": 1.5
+  },
+  {
+    "Name": "Balder Armor",
+    "PHY": 37, "STR": 36.3, "SLA": 45.1, "THR": 35.5,
+    "Mag": 15, "Fire": 18, "Lghtng": 15,
+    "Bld": 20, "Psn": 16, "Curse": 0,
+    "Pse": 16, "Wt": 10.9, "P:W": 1.5
+  },
+  {
+    "Name": "Black Cleric Robe",
+    "PHY": 23, "STR": 25.1, "SLA": 23, "THR": 23,
+    "Mag": 29, "Fire": 25, "Lghtng": 19,
+    "Bld": 22, "Psn": 22, "Curse": 13,
+    "Pse": 0, "Wt": 3.9, "P:W": 0
+  },
+  {
+    "Name": "Black Iron Armor",
+    "PHY": 68, "STR": 64.6, "SLA": 78.2, "THR": 68,
+    "Mag": 30, "Fire": 51, "Lghtng": 21,
+    "Bld": 43, "Psn": 25, "Curse": 13,
+    "Pse": 31, "Wt": 15.6, "P:W": 2
+  },
+  {
+    "Name": "Black Knight Armor",
+    "PHY": 57, "STR": 54.2, "SLA": 64.4, "THR": 55.9,
+    "Mag": 29, "Fire": 48, "Lghtng": 17,
+    "Bld": 32, "Psn": 15, "Curse": 0,
+    "Pse": 21, "Wt": 13, "P:W": 1.6
+  },
+  {
+    "Name": "Black Leather Armor",
+    "PHY": 23, "STR": 24.6, "SLA": 23, "THR": 23,
+    "Mag": 20, "Fire": 14, "Lghtng": 16,
+    "Bld": 23, "Psn": 31, "Curse": 0,
+    "Pse": 0, "Wt": 3.1, "P:W": 0
+  },
+  {
+    "Name": "Black Sorcerer Cloak",
+    "PHY": 13, "STR": 13.4, "SLA": 14.2, "THR": 13,
+    "Mag": 28, "Fire": 21, "Lghtng": 21,
+    "Bld": 31, "Psn": 31, "Curse": 4,
+    "Pse": 0, "Wt": 1.8, "P:W": 0
+  },
+  {
+    "Name": "Brass Armor",
+    "PHY": 48, "STR": 46.1, "SLA": 54.2, "THR": 48,
+    "Mag": 27, "Fire": 25, "Lghtng": 25,
+    "Bld": 24, "Psn": 20, "Curse": 11,
+    "Pse": 16, "Wt": 10.9, "P:W": 1.5
+  },
+  {
+    "Name": "Brigand Armor",
+    "PHY": 23, "STR": 25.3, "SLA": 23, "THR": 20.7,
+    "Mag": 20, "Fire": 13, "Lghtng": 17,
+    "Bld": 20, "Psn": 20, "Curse": 0,
+    "Pse": 0, "Wt": 3.1, "P:W": 0
+  },
+  {
+    "Name": "Catarina Armor",
+    "PHY": 57, "STR": 56.4, "SLA": 65.5, "THR": 57,
+    "Mag": 31, "Fire": 37, "Lghtng": 19,
+    "Bld": 34, "Psn": 24, "Curse": 0,
+    "Pse": 21, "Wt": 11.7, "P:W": 1.8
+  },
+  {
+    "Name": "Chain Armor",
+    "PHY": 30, "STR": 30, "SLA": 36, "THR": 29.1,
+    "Mag": 21, "Fire": 16, "Lghtng": 7,
+    "Bld": 20, "Psn": 12, "Curse": 0,
+    "Pse": 9, "Wt": 6, "P:W": 1.5
+  },
+  {
+    "Name": "Chester's Long Coat",
+    "PHY": 27, "STR": 36.5, "SLA": 27, "THR": 27,
+    "Mag": 30, "Fire": 21, "Lghtng": 28,
+    "Bld": 44, "Psn": 32, "Curse": 0,
+    "Pse": 0, "Wt": 4.5, "P:W": 0
+  },
+  {
+    "Name": "Cleric Armor",
+    "PHY": 40, "STR": 40, "SLA": 46, "THR": 40,
+    "Mag": 23, "Fire": 21, "Lghtng": 15,
+    "Bld": 23, "Psn": 16, "Curse": 0,
+    "Pse": 20, "Wt": 12.5, "P:W": 1.6
+  },
+  {
+    "Name": "Crimson Robe",
+    "PHY": 32, "STR": 35.2, "SLA": 32, "THR": 32,
+    "Mag": 33, "Fire": 19, "Lghtng": 24,
+    "Bld": 21, "Psn": 21, "Curse": 21,
+    "Pse": 0, "Wt": 3.9, "P:W": 0
+  },
+  {
+    "Name": "Crystalline Armor",
+    "PHY": 59, "STR": 50.1, "SLA": 67.9, "THR": 59,
+    "Mag": 21, "Fire": 15, "Lghtng": 7,
+    "Bld": 15, "Psn": 0, "Curse": 0,
+    "Pse": 16, "Wt": 10.9, "P:W": 1.5
+  },
+  {
+    "Name": "Dark Armor",
+    "PHY": 45, "STR": 45, "SLA": 49.5, "THR": 42.3,
+    "Mag": 30, "Fire": 31, "Lghtng": 27,
+    "Bld": 30, "Psn": 21, "Curse": 0,
+    "Pse": 16, "Wt": 9.8, "P:W": 1.6
+  },
+  {
+    "Name": "Dingy Robe",
+    "PHY": 23, "STR": 28.8, "SLA": 23, "THR": 23,
+    "Mag": 33, "Fire": 19, "Lghtng": 25,
+    "Bld": 35, "Psn": 26, "Curse": 35,
+    "Pse": 0, "Wt": 3, "P:W": 0
+  },
+  {
+    "Name": "Eastern Armor",
+    "PHY": 45, "STR": 42.8, "SLA": 55.8, "THR": 43.6,
+    "Mag": 15, "Fire": 33, "Lghtng": 18,
+    "Bld": 38, "Psn": 28, "Curse": 0,
+    "Pse": 20, "Wt": 12.3, "P:W": 1.6
+  },
+  {
+    "Name": "Elite Cleric Armor",
+    "PHY": 41, "STR": 41, "SLA": 46.7, "THR": 41,
+    "Mag": 23, "Fire": 21, "Lghtng": 15,
+    "Bld": 23, "Psn": 16, "Curse": 0,
+    "Pse": 23, "Wt": 13.3, "P:W": 1.7
+  },
+  {
+    "Name": "Elite Knight Armor",
+    "PHY": 39, "STR": 37.8, "SLA": 45.2, "THR": 39,
+    "Mag": 17, "Fire": 18, "Lghtng": 15,
+    "Bld": 23, "Psn": 16, "Curse": 0,
+    "Pse": 20, "Wt": 11.7, "P:W": 1.7
+  },
+  {
+    "Name": "Embraced Armor of Favor",
+    "PHY": 48, "STR": 45.6, "SLA": 55.7, "THR": 48,
+    "Mag": 23, "Fire": 30, "Lghtng": 19,
+    "Bld": 28, "Psn": 22, "Curse": 22,
+    "Pse": 20, "Wt": 11.7, "P:W": 1.7
+  },
+  {
+    "Name": "Giant Armor",
+    "PHY": 72, "STR": 66.2, "SLA": 81.4, "THR": 72,
+    "Mag": 32, "Fire": 48, "Lghtng": 33,
+    "Bld": 32, "Psn": 19, "Curse": 0,
+    "Pse": 35, "Wt": 16.4, "P:W": 2.1
+  },
+  {
+    "Name": "Gold-Hemmed Black Cloak",
+    "PHY": 31, "STR": 33.2, "SLA": 31, "THR": 31,
+    "Mag": 38, "Fire": 58, "Lghtng": 21,
+    "Bld": 40, "Psn": 94, "Curse": 0,
+    "Pse": 0, "Wt": 3.5, "P:W": 0
+  },
+  {
+    "Name": "Golem Armor",
+    "PHY": 91, "STR": 83.7, "SLA": 106.5, "THR": 91,
+    "Mag": 45, "Fire": 41, "Lghtng": 17,
+    "Bld": 45, "Psn": 31, "Curse": 0,
+    "Pse": 33, "Wt": 16.4, "P:W": 2
+  },
+  {
+    "Name": "Gough's Armor",
+    "PHY": 50, "STR": 50, "SLA": 52.5, "THR": 47.5,
+    "Mag": 28, "Fire": 41, "Lghtng": 21,
+    "Bld": 21, "Psn": 12, "Curse": 0,
+    "Pse": 19, "Wt": 13, "P:W": 1.5
+  },
+  {
+    "Name": "Guardian Armor",
+    "PHY": 86, "STR": 80.8, "SLA": 98.9, "THR": 86,
+    "Mag": 50, "Fire": 42, "Lghtng": 50,
+    "Bld": 42, "Psn": 14, "Curse": 0,
+    "Pse": 37, "Wt": 17, "P:W": 2.2
+  },
+  {
+    "Name": "Hard Leather Armor",
+    "PHY": 26, "STR": 27.6, "SLA": 26, "THR": 26,
+    "Mag": 20, "Fire": 13, "Lghtng": 23,
+    "Bld": 23, "Psn": 20, "Curse": 0,
+    "Pse": 0, "Wt": 5.9, "P:W": 0
+  },
+  {
+    "Name": "Havel's Armor",
+    "PHY": 92, "STR": 78.2, "SLA": 105.8, "THR": 92,
+    "Mag": 56, "Fire": 54, "Lghtng": 49,
+    "Bld": 45, "Psn": 11, "Curse": 22,
+    "Pse": 47, "Wt": 19.5, "P:W": 2.3
+  },
+  {
+    "Name": "Hollow Soldier Armor",
+    "PHY": 26, "STR": 26, "SLA": 28.9, "THR": 22.9,
+    "Mag": 16, "Fire": 17, "Lghtng": 10,
+    "Bld": 18, "Psn": 13, "Curse": 0,
+    "Pse": 12, "Wt": 7.8, "P:W": 1.5
+  },
+  {
+    "Name": "Hollow Thief's Leather Armor",
+    "PHY": 21, "STR": 22.9, "SLA": 21, "THR": 21.8,
+    "Mag": 20, "Fire": 13, "Lghtng": 18,
+    "Bld": 15, "Psn": 29, "Curse": 0,
+    "Pse": 0, "Wt": 2.8, "P:W": 0
+  },
+  {
+    "Name": "Hollow Warrior Armor",
+    "PHY": 24, "STR": 23.3, "SLA": 24.7, "THR": 22.8,
+    "Mag": 16, "Fire": 12, "Lghtng": 17,
+    "Bld": 13, "Psn": 13, "Curse": 0,
+    "Pse": 8, "Wt": 6.6, "P:W": 1.2
+  },
+  {
+    "Name": "Holy Robe",
+    "PHY": 22, "STR": 26, "SLA": 22, "THR": 22,
+    "Mag": 23, "Fire": 14, "Lghtng": 19,
+    "Bld": 24, "Psn": 20, "Curse": 0,
+    "Pse": 0, "Wt": 4, "P:W": 0
+  },
+  {
+    "Name": "Knight Armor",
+    "PHY": 37, "STR": 36.1, "SLA": 42.9, "THR": 36.3,
+    "Mag": 16, "Fire": 18, "Lghtng": 13,
+    "Bld": 23, "Psn": 16, "Curse": 0,
+    "Pse": 20, "Wt": 10.9, "P:W": 1.8
+  },
+  {
+    "Name": "Leather Armor",
+    "PHY": 24, "STR": 25.4, "SLA": 24, "THR": 24,
+    "Mag": 20, "Fire": 12, "Lghtng": 23,
+    "Bld": 21, "Psn": 20, "Curse": 0,
+    "Pse": 0, "Wt": 4.7, "P:W": 0
+  },
+  {
+    "Name": "Lord's Blade Robe",
+    "PHY": 34, "STR": 34, "SLA": 35.7, "THR": 37.4,
+    "Mag": 26, "Fire": 32, "Lghtng": 20,
+    "Bld": 28, "Psn": 49, "Curse": 25,
+    "Pse": 8, "Wt": 6.4, "P:W": 1.3
+  },
+  {
+    "Name": "Maiden Robe",
+    "PHY": 19, "STR": 22.2, "SLA": 19, "THR": 19,
+    "Mag": 22, "Fire": 13, "Lghtng": 17,
+    "Bld": 23, "Psn": 18, "Curse": 8,
+    "Pse": 0, "Wt": 2, "P:W": 0
+  },
+  {
+    "Name": "Mage Smith Coat",
+    "PHY": 20, "STR": 21.6, "SLA": 20.8, "THR": 20,
+    "Mag": 27, "Fire": 13, "Lghtng": 17,
+    "Bld": 16, "Psn": 12, "Curse": 0,
+    "Pse": 0, "Wt": 2.3, "P:W": 0
+  },
+  {
+    "Name": "Moonlight Robe",
+    "PHY": 20, "STR": 20, "SLA": 20, "THR": 20,
+    "Mag": 31, "Fire": 17, "Lghtng": 17,
+    "Bld": 23, "Psn": 23, "Curse": 31,
+    "Pse": 0, "Wt": 3.1, "P:W": 0
+  },
+  {
+    "Name": "Ornstein's Armor",
+    "PHY": 70, "STR": 66.5, "SLA": 79.1, "THR": 70,
+    "Mag": 36, "Fire": 46, "Lghtng": 40,
+    "Bld": 38, "Psn": 18, "Curse": 18,
+    "Pse": 19, "Wt": 12, "P:W": 1.6
+  },
+  {
+    "Name": "Painting Guardian Robe",
+    "PHY": 9, "STR": 10.8, "SLA": 9, "THR": 9,
+    "Mag": 34, "Fire": 29, "Lghtng": 21,
+    "Bld": 32, "Psn": 78, "Curse": 16,
+    "Pse": 0, "Wt": 1.6, "P:W": 0
+  },
+  {
+    "Name": "Paladin Armor",
+    "PHY": 59, "STR": 56.1, "SLA": 67.9, "THR": 59,
+    "Mag": 31, "Fire": 37, "Lghtng": 19,
+    "Bld": 34, "Psn": 24, "Curse": 57,
+    "Pse": 20, "Wt": 12.9, "P:W": 1.6
+  },
+  {
+    "Name": "Robe of the Channelers",
+    "PHY": 53, "STR": 50.9, "SLA": 60.4, "THR": 53,
+    "Mag": 45, "Fire": 45, "Lghtng": 35,
+    "Bld": 38, "Psn": 33, "Curse": 0,
+    "Pse": 12, "Wt": 10.1, "P:W": 1.2
+  },
+  {
+    "Name": "Robe of the Great Lord",
+    "PHY": 32, "STR": 34.6, "SLA": 36.8, "THR": 29.4,
+    "Mag": 32, "Fire": 41, "Lghtng": 41,
+    "Bld": 30, "Psn": 15, "Curse": 40,
+    "Pse": 0, "Wt": 6, "P:W": 0
+  },
+  {
+    "Name": "Sage Robe",
+    "PHY": 41, "STR": 44.3, "SLA": 42.6, "THR": 41,
+    "Mag": 28, "Fire": 29, "Lghtng": 35,
+    "Bld": 49, "Psn": 49, "Curse": 0,
+    "Pse": 0, "Wt": 4, "P:W": 0
+  },
+  {
+    "Name": "Shadow Garb",
+    "PHY": 23, "STR": 25.3, "SLA": 23, "THR": 23,
+    "Mag": 12, "Fire": 16, "Lghtng": 17,
+    "Bld": 39, "Psn": 47, "Curse": 0,
+    "Pse": 0, "Wt": 2.3, "P:W": 0
+  },
+  {
+    "Name": "Silver Knight Armor",
+    "PHY": 52, "STR": 48.9, "SLA": 59.8, "THR": 51,
+    "Mag": 26, "Fire": 29, "Lghtng": 24,
+    "Bld": 24, "Psn": 12, "Curse": 2,
+    "Pse": 19, "Wt": 12, "P:W": 1.6
+  },
+  {
+    "Name": "Smough's Armor",
+    "PHY": 106, "STR": 92.2, "SLA": 121.9, "THR": 106,
+    "Mag": 52, "Fire": 66, "Lghtng": 59,
+    "Bld": 54, "Psn": 28, "Curse": 9,
+    "Pse": 35, "Wt": 17.6, "P:W": 2
+  },
+  {
+    "Name": "Sorcerer Cloak",
+    "PHY": 20, "STR": 21.6, "SLA": 20.8, "THR": 20,
+    "Mag": 27, "Fire": 13, "Lghtng": 17,
+    "Bld": 16, "Psn": 12, "Curse": 0,
+    "Pse": 0, "Wt": 2.3, "P:W": 0
+  },
+  {
+    "Name": "Steel Armor",
+    "PHY": 42, "STR": 39.5, "SLA": 48.3, "THR": 42,
+    "Mag": 22, "Fire": 21, "Lghtng": 13,
+    "Bld": 23, "Psn": 16, "Curse": 0,
+    "Pse": 23, "Wt": 14, "P:W": 1.6
+  },
+  {
+    "Name": "Stone Armor",
+    "PHY": 91, "STR": 85.5, "SLA": 104.7, "THR": 91,
+    "Mag": 45, "Fire": 54, "Lghtng": 54,
+    "Bld": 45, "Psn": 16, "Curse": 0,
+    "Pse": 39, "Wt": 17.6, "P:W": 2.2
+  },
+  {
+    "Name": "Tattered Cloth Robe",
+    "PHY": 21, "STR": 23.3, "SLA": 21, "THR": 21,
+    "Mag": 23, "Fire": 30, "Lghtng": 17,
+    "Bld": 23, "Psn": 59, "Curse": 2,
+    "Pse": 0, "Wt": 2.7, "P:W": 0
+  },
+  {
+    "Name": "Wanderer Coat",
+    "PHY": 23, "STR": 24.6, "SLA": 24.6, "THR": 23,
+    "Mag": 21, "Fire": 26, "Lghtng": 23,
+    "Bld": 21, "Psn": 21, "Curse": 0,
+    "Pse": 0, "Wt": 3.5, "P:W": 0
+  },
+  {
+    "Name": "Witch Cloak",
+    "PHY": 33, "STR": 36.6, "SLA": 33, "THR": 33,
+    "Mag": 43, "Fire": 20, "Lghtng": 26,
+    "Bld": 36, "Psn": 36, "Curse": 12,
+    "Pse": 0, "Wt": 4, "P:W": 0
+  },
+  {
+    "Name": "Xanthous Overcoat",
+    "PHY": 32, "STR": 35.8, "SLA": 32, "THR": 29.1,
+    "Mag": 37, "Fire": 7, "Lghtng": 23,
+    "Bld": 22, "Psn": 29, "Curse": 0,
+    "Pse": 0, "Wt": 3.9, "P:W": 0
+  }
+]

@@ -1,0 +1,485 @@
+[
+  {
+    "Name": "Balder Helm",
+    "PHY": 14, "STR": 13.7, "SLA": 17.1, "THR": 13.4,
+    "Mag": 6, "Fire": 8, "Lghtng": 6,
+    "Bld": 8, "Psn": 6, "Curse": 0,
+    "Pse": 6, "Wt": 4.2, "P:W": 1.4
+  },
+  {
+    "Name": "Big Hat",
+    "PHY": 14, "STR": 15.4, "SLA": 15.4, "THR": 12.6,
+    "Mag": 43, "Fire": 7, "Lghtng": 17,
+    "Bld": 13, "Psn": 13, "Curse": 0,
+    "Pse": 0, "Wt": 3, "P:W": 0
+  },
+  {
+    "Name": "Black Iron Helm",
+    "PHY": 27, "STR": 25.7, "SLA": 31.1, "THR": 27,
+    "Mag": 11, "Fire": 19, "Lghtng": 8,
+    "Bld": 17, "Psn": 10, "Curse": 5,
+    "Pse": 12, "Wt": 6, "P:W": 2
+  },
+  {
+    "Name": "Black Knight Helm",
+    "PHY": 21, "STR": 19.9, "SLA": 23.7, "THR": 20.6,
+    "Mag": 11, "Fire": 18, "Lghtng": 6,
+    "Bld": 12, "Psn": 6, "Curse": 0,
+    "Pse": 8, "Wt": 5, "P:W": 1.6
+  },
+  {
+    "Name": "Black Sorcerer Hat",
+    "PHY": 5, "STR": 5.1, "SLA": 5.5, "THR": 5,
+    "Mag": 11, "Fire": 8, "Lghtng": 8,
+    "Bld": 12, "Psn": 12, "Curse": 2,
+    "Pse": 0, "Wt": 0.7, "P:W": 0
+  },
+  {
+    "Name": "Bloated Head",
+    "PHY": 17, "STR": 17, "SLA": 17, "THR": 17,
+    "Mag": 17, "Fire": 9, "Lghtng": 11,
+    "Bld": 16, "Psn": 32, "Curse": 10,
+    "Pse": 0, "Wt": 2.5, "P:W": 0
+  },
+  {
+    "Name": "Bloated Sorcerer Head",
+    "PHY": 14, "STR": 14, "SLA": 14, "THR": 14,
+    "Mag": 22, "Fire": 9, "Lghtng": 13,
+    "Bld": 8, "Psn": 38, "Curse": 15,
+    "Pse": 0, "Wt": 2.2, "P:W": 0
+  },
+  {
+    "Name": "Brass Helm",
+    "PHY": 22, "STR": 21.1, "SLA": 24.9, "THR": 22,
+    "Mag": 12, "Fire": 11, "Lghtng": 11,
+    "Bld": 11, "Psn": 9, "Curse": 6,
+    "Pse": 8, "Wt": 5.1, "P:W": 1.6
+  },
+  {
+    "Name": "Brigand Hood",
+    "PHY": 9, "STR": 9.9, "SLA": 9, "THR": 8.1,
+    "Mag": 8, "Fire": 5, "Lghtng": 6,
+    "Bld": 8, "Psn": 8, "Curse": 0,
+    "Pse": 0, "Wt": 1.2, "P:W": 0
+  },
+  {
+    "Name": "Catarina Helm",
+    "PHY": 22, "STR": 21.8, "SLA": 25.3, "THR": 22,
+    "Mag": 12, "Fire": 13, "Lghtng": 7,
+    "Bld": 13, "Psn": 9, "Curse": 0,
+    "Pse": 8, "Wt": 4.5, "P:W": 1.8
+  },
+  {
+    "Name": "Chain Helm",
+    "PHY": 12, "STR": 12, "SLA": 14, "THR": 11,
+    "Mag": 10, "Fire": 8, "Lghtng": 3,
+    "Bld": 10, "Psn": 6, "Curse": 0,
+    "Pse": 5, "Wt": 3, "P:W": 1.7
+  },
+  {
+    "Name": "Cleric Helm",
+    "PHY": 15, "STR": 15, "SLA": 17.3, "THR": 15,
+    "Mag": 9, "Fire": 8, "Lghtng": 6,
+    "Bld": 9, "Psn": 6, "Curse": 0,
+    "Pse": 8, "Wt": 4.8, "P:W": 1.7
+  },
+  {
+    "Name": "Crown of Dusk",
+    "PHY": 5, "STR": 5, "SLA": 5, "THR": 5,
+    "Mag": 11, "Fire": 2, "Lghtng": 6,
+    "Bld": 5, "Psn": 5, "Curse": 20,
+    "Pse": 0, "Wt": 0.4, "P:W": 0
+  },
+  {
+    "Name": "Crown of the Dark Sun",
+    "PHY": 12, "STR": 12, "SLA": 12, "THR": 12,
+    "Mag": 12, "Fire": 6, "Lghtng": 6,
+    "Bld": 9, "Psn": 9, "Curse": 12,
+    "Pse": 0, "Wt": 3, "P:W": 0
+  },
+  {
+    "Name": "Crown of the Great Lord",
+    "PHY": 16, "STR": 17.3, "SLA": 18.4, "THR": 14.7,
+    "Mag": 16, "Fire": 21, "Lghtng": 21,
+    "Bld": 15, "Psn": 8, "Curse": 20,
+    "Pse": 0, "Wt": 3, "P:W": 0
+  },
+  {
+    "Name": "Crystalline Helm",
+    "PHY": 25, "STR": 21.3, "SLA": 28.8, "THR": 25,
+    "Mag": 8, "Fire": 6, "Lghtng": 2,
+    "Bld": 6, "Psn": 0, "Curse": 0,
+    "Pse": 6, "Wt": 4.2, "P:W": 1.4
+  },
+  {
+    "Name": "Dark Mask",
+    "PHY": 18, "STR": 18, "SLA": 19.8, "THR": 16.9,
+    "Mag": 12, "Fire": 12, "Lghtng": 10,
+    "Bld": 12, "Psn": 8, "Curse": 0,
+    "Pse": 6, "Wt": 3.8, "P:W": 1.6
+  },
+  {
+    "Name": "Dingy Hood",
+    "PHY": 6, "STR": 7.5, "SLA": 6, "THR": 6,
+    "Mag": 8, "Fire": 5, "Lghtng": 6,
+    "Bld": 9, "Psn": 7, "Curse": 9,
+    "Pse": 0, "Wt": 0.8, "P:W": 0
+  },
+  {
+    "Name": "Eastern Helm",
+    "PHY": 17, "STR": 16.2, "SLA": 21.1, "THR": 16.5,
+    "Mag": 6, "Fire": 12, "Lghtng": 7,
+    "Bld": 15, "Psn": 11, "Curse": 0,
+    "Pse": 8, "Wt": 4.7, "P:W": 1.7
+  },
+  {
+    "Name": "Elite Cleric Helm",
+    "PHY": 16, "STR": 16, "SLA": 18.2, "THR": 16,
+    "Mag": 9, "Fire": 8, "Lghtng": 6,
+    "Bld": 9, "Psn": 6, "Curse": 0,
+    "Pse": 9, "Wt": 5.1, "P:W": 1.8
+  },
+  {
+    "Name": "Elite Knight Helm",
+    "PHY": 15, "STR": 14.6, "SLA": 17.4, "THR": 15,
+    "Mag": 7, "Fire": 8, "Lghtng": 6,
+    "Bld": 9, "Psn": 6, "Curse": 0,
+    "Pse": 8, "Wt": 4.5, "P:W": 1.8
+  },
+  {
+    "Name": "Fang Boar Helm",
+    "PHY": 26, "STR": 23.4, "SLA": 31.2, "THR": 26,
+    "Mag": 5, "Fire": 4, "Lghtng": 4,
+    "Bld": 13, "Psn": 8, "Curse": 0,
+    "Pse": 12, "Wt": 8, "P:W": 1.5
+  },
+  {
+    "Name": "Gargoyle Helm",
+    "PHY": 15, "STR": 12.3, "SLA": 19.1, "THR": 13.7,
+    "Mag": 15, "Fire": 15, "Lghtng": 15,
+    "Bld": 22, "Psn": 19, "Curse": 0,
+    "Pse": 8, "Wt": 3.5, "P:W": 2.3
+  },
+  {
+    "Name": "Giant Helm",
+    "PHY": 27, "STR": 24.8, "SLA": 30.5, "THR": 27,
+    "Mag": 13, "Fire": 19, "Lghtng": 13,
+    "Bld": 13, "Psn": 8, "Curse": 0,
+    "Pse": 14, "Wt": 6.3, "P:W": 2.2
+  },
+  {
+    "Name": "Gold-Hemmed Black Hood",
+    "PHY": 11, "STR": 11.8, "SLA": 11, "THR": 11,
+    "Mag": 15, "Fire": 22, "Lghtng": 8,
+    "Bld": 16, "Psn": 36, "Curse": 0,
+    "Pse": 0, "Wt": 1.4, "P:W": 0
+  },
+  {
+    "Name": "Golem Helm",
+    "PHY": 38.8, "STR": 38.8, "SLA": 40.7, "THR": 36.8,
+    "Mag": 21.7, "Fire": 32.5, "Lghtng": 17,
+    "Bld": 14, "Psn": 7.6, "Curse": 0,
+    "Pse": 9, "Wt": 6.5, "P:W": 1.4
+  },
+  {
+    "Name": "Gough's Helm",
+    "PHY": 25, "STR": 25, "SLA": 26.2, "THR": 23.8,
+    "Mag": 14, "Fire": 21, "Lghtng": 11,
+    "Bld": 11, "Psn": 6, "Curse": 0,
+    "Pse": 9, "Wt": 6.5, "P:W": 1.4
+  },
+  {
+    "Name": "Guardian Helm",
+    "PHY": 41.0, "STR": 38.5, "SLA": 47.1, "THR": 41.0,
+    "Mag": 23, "Fire": 19, "Lghtng": 23,
+    "Bld": 17, "Psn": 6, "Curse": 0,
+    "Pse": 15, "Wt": 7.2, "P:W": 2.1
+  },
+  {
+    "Name": "Havel's Helm",
+    "PHY": 36, "STR": 30.6, "SLA": 41.4, "THR": 36,
+    "Mag": 22, "Fire": 22, "Lghtng": 18,
+    "Bld": 18, "Psn": 4, "Curse": 9,
+    "Pse": 18, "Wt": 7.5, "P:W": 2.4
+  },
+  {
+    "Name": "Helm of Artorias",
+    "PHY": 18, "STR": 16.2, "SLA": 20.7, "THR": 18.9,
+    "Mag": 9, "Fire": 19, "Lghtng": 9,
+    "Bld": 9, "Psn": 9, "Curse": 9,
+    "Pse": 6, "Wt": 4.2, "P:W": 1.4
+  },
+  {
+    "Name": "Helm of Favor",
+    "PHY": 18, "STR": 17.1, "SLA": 20.9, "THR": 18,
+    "Mag": 10, "Fire": 11, "Lghtng": 7,
+    "Bld": 11, "Psn": 8, "Curse": 8,
+    "Pse": 8, "Wt": 4.5, "P:W": 1.8
+  },
+  {
+    "Name": "Helm of The Wise",
+    "PHY": 18, "STR": 17.1, "SLA": 20.7, "THR": 18,
+    "Mag": 12, "Fire": 13, "Lghtng": 10,
+    "Bld": 11, "Psn": 7, "Curse": 18,
+    "Pse": 8, "Wt": 5.1, "P:W": 1.6
+  },
+  {
+    "Name": "Helm of Thorns",
+    "PHY": 17, "STR": 16.2, "SLA": 18.5, "THR": 17,
+    "Mag": 10, "Fire": 12, "Lghtng": 8,
+    "Bld": 10, "Psn": 7, "Curse": 0,
+    "Pse": 6, "Wt": 4.1, "P:W": 1.5
+  },
+  {
+    "Name": "Hollow Soldier Helm",
+    "PHY": 10, "STR": 10, "SLA": 11.1, "THR": 8.8,
+    "Mag": 6, "Fire": 6, "Lghtng": 4,
+    "Bld": 7, "Psn": 5, "Curse": 0,
+    "Pse": 5, "Wt": 3.0, "P:W": 1.7
+  },
+  {
+    "Name": "Hollow Thief's Hood",
+    "PHY": 8, "STR": 8.7, "SLA": 8, "THR": 8.3,
+    "Mag": 8, "Fire": 5, "Lghtng": 7,
+    "Bld": 6, "Psn": 11, "Curse": 0,
+    "Pse": 0, "Wt": 1.1, "P:W": 0
+  },
+  {
+    "Name": "Hollow Warrior Helm",
+    "PHY": 10, "STR": 9.7, "SLA": 10.3, "THR": 9.5,
+    "Mag": 6, "Fire": 5, "Lghtng": 6,
+    "Bld": 5, "Psn": 5, "Curse": 0,
+    "Pse": 3, "Wt": 2.6, "P:W": 1.2
+  },
+  {
+    "Name": "Iron Helm",
+    "PHY": 14, "STR": 14, "SLA": 14, "THR": 13.7,
+    "Mag": 10, "Fire": 10, "Lghtng": 9,
+    "Bld": 12, "Psn": 8, "Curse": 2,
+    "Pse": 8, "Wt": 4.5, "P:W": 1.7
+  },
+  {
+    "Name": "Knight Helm",
+    "PHY": 14, "STR": 13.3, "SLA": 16.2, "THR": 13.7,
+    "Mag": 6, "Fire": 8, "Lghtng": 5,
+    "Bld": 9, "Psn": 6, "Curse": 0,
+    "Pse": 8, "Wt": 4.2, "P:W": 1.9
+  },
+  {
+    "Name": "Mage Smith Hat",
+    "PHY": 8, "STR": 8.6, "SLA": 8.3, "THR": 8,
+    "Mag": 10, "Fire": 5, "Lghtng": 6,
+    "Bld": 6, "Psn": 5, "Curse": 0,
+    "Pse": 0, "Wt": 0.9, "P:W": 0
+  },
+  {
+    "Name": "Maiden Hood",
+    "PHY": 7, "STR": 8.2, "SLA": 7, "THR": 7,
+    "Mag": 8, "Fire": 5, "Lghtng": 6,
+    "Bld": 9, "Psn": 7, "Curse": 3,
+    "Pse": 0, "Wt": 0.8, "P:W": 0
+  },
+  {
+    "Name": "Mask of the Child",
+    "PHY": 6, "STR": 6, "SLA": 6, "THR": 6,
+    "Mag": 10, "Fire": 8, "Lghtng": 10,
+    "Bld": 6, "Psn": 0, "Curse": 0,
+    "Pse": 0, "Wt": 1.2, "P:W": 0
+  },
+  {
+    "Name": "Mask of the Father",
+    "PHY": 6, "STR": 6, "SLA": 6, "THR": 6,
+    "Mag": 10, "Fire": 6, "Lghtng": 8,
+    "Bld": 6, "Psn": 0, "Curse": 0,
+    "Pse": 0, "Wt": 1.2, "P:W": 0
+  },
+  {
+    "Name": "Mask of the Mother",
+    "PHY": 6, "STR": 6, "SLA": 6, "THR": 6,
+    "Mag": 12, "Fire": 6, "Lghtng": 8,
+    "Bld": 10, "Psn": 0, "Curse": 0,
+    "Pse": 0, "Wt": 1.2, "P:W": 0
+  },
+  {
+    "Name": "Mask of the Sealer",
+    "PHY": 12, "STR": 13.2, "SLA": 12, "THR": 12,
+    "Mag": 12, "Fire": 7, "Lghtng": 9,
+    "Bld": 8, "Psn": 8, "Curse": 8,
+    "Pse": 0, "Wt": 1.5, "P:W": 0
+  },
+  {
+    "Name": "Mask of Velka",
+    "PHY": 12, "STR": 13.1, "SLA": 12, "THR": 12,
+    "Mag": 12, "Fire": 10, "Lghtng": 7,
+    "Bld": 9, "Psn": 9, "Curse": 20,
+    "Pse": 0, "Wt": 2.5, "P:W": 0
+  },
+  {
+    "Name": "Ornstein's Helm",
+    "PHY": 32, "STR": 30.4, "SLA": 36.2, "THR": 32,
+    "Mag": 16, "Fire": 22, "Lghtng": 18,
+    "Bld": 18, "Psn": 8, "Curse": 8,
+    "Pse": 9, "Wt": 5.5, "P:W": 1.6
+  },
+  {
+    "Name": "Painting Guardian Hood",
+    "PHY": 3, "STR": 3.6, "SLA": 3, "THR": 3,
+    "Mag": 31, "Fire": 11, "Lghtng": 8,
+    "Bld": 12, "Psn": 30, "Curse": 6,
+    "Pse": 0, "Wt": 0.6, "P:W": 0
+  },
+  {
+    "Name": "Paladin Helm",
+    "PHY": 22, "STR": 20.9, "SLA": 25.3, "THR": 22,
+    "Mag": 12, "Fire": 13, "Lghtng": 7,
+    "Bld": 13, "Psn": 9, "Curse": 22,
+    "Pse": 8, "Wt": 5, "P:W": 1.6
+  },
+  {
+    "Name": "Pharis's Hat",
+    "PHY": 7, "STR": 7.4, "SLA": 7, "THR": 7,
+    "Mag": 5, "Fire": 7, "Lghtng": 6,
+    "Bld": 6, "Psn": 5, "Curse": 0,
+    "Pse": 0, "Wt": 1.2, "P:W": 0
+  },
+  {
+    "Name": "Porcelain Mask",
+    "PHY": 13, "STR": 13, "SLA": 13.7, "THR": 14.3,
+    "Mag": 10, "Fire": 12, "Lghtng": 8,
+    "Bld": 11, "Psn": 19, "Curse": 11,
+    "Pse": 3, "Wt": 2.5, "P:W": 1.2
+  },
+  {
+    "Name": "Priest's Hat",
+    "PHY": 8, "STR": 9.4, "SLA": 8, "THR": 8,
+    "Mag": 9, "Fire": 5, "Lghtng": 7,
+    "Bld": 9, "Psn": 8, "Curse": 0,
+    "Pse": 0, "Wt": 1.2, "P:W": 0
+  },
+  {
+    "Name": "Royal Helm",
+    "PHY": 16, "STR": 13.9, "SLA": 16, "THR": 16,
+    "Mag": 10, "Fire": 10, "Lghtng": 6,
+    "Bld": 16, "Psn": 12, "Curse": 0,
+    "Pse": 8, "Wt": 4.5, "P:W": 1.8
+  },
+  {
+    "Name": "Sack",
+    "PHY": 6, "STR": 10, "SLA": 6, "THR": 5,
+    "Mag": 6, "Fire": 8, "Lghtng": 4,
+    "Bld": 12, "Psn": 10, "Curse": 0,
+    "Pse": 0, "Wt": 0.6, "P:W": 0
+  },
+  {
+    "Name": "Shadow Mask",
+    "PHY": 9, "STR": 9.9, "SLA": 9, "THR": 9,
+    "Mag": 5, "Fire": 6, "Lghtng": 6,
+    "Bld": 15, "Psn": 18, "Curse": 0,
+    "Pse": 0, "Wt": 0.9, "P:W": 0
+  },
+  {
+    "Name": "Silver Knight Helm",
+    "PHY": 21, "STR": 19.7, "SLA": 24.2, "THR": 20.6,
+    "Mag": 10, "Fire": 11, "Lghtng": 14,
+    "Bld": 9, "Psn": 5, "Curse": 1,
+    "Pse": 8, "Wt": 4.8, "P:W": 1.7
+  },
+  {
+    "Name": "Six-Eyed Helm of the Channelers",
+    "PHY": 20, "STR": 19.2, "SLA": 22.8, "THR": 20,
+    "Mag": 18, "Fire": 17, "Lghtng": 13,
+    "Bld": 15, "Psn": 13, "Curse": 0,
+    "Pse": 5, "Wt": 3.9, "P:W": 1.3
+  },
+  {
+    "Name": "Smough's Helm",
+    "PHY": 40, "STR": 34.8, "SLA": 46, "THR": 40,
+    "Mag": 19, "Fire": 26, "Lghtng": 21,
+    "Bld": 21, "Psn": 12, "Curse": 5,
+    "Pse": 14, "Wt": 6.8, "P:W": 2.1
+  },
+  {
+    "Name": "Snickering Top Hat",
+    "PHY": 12, "STR": 16.2, "SLA": 12, "THR": 12,
+    "Mag": 13, "Fire": 9, "Lghtng": 12,
+    "Bld": 19, "Psn": 14, "Curse": 0,
+    "Pse": 0, "Wt": 2, "P:W": 0
+  },
+  {
+    "Name": "Sorcerer Hat",
+    "PHY": 8, "STR": 8.6, "SLA": 8.3, "THR": 8,
+    "Mag": 10, "Fire": 5, "Lghtng": 6,
+    "Bld": 6, "Psn": 5, "Curse": 0,
+    "Pse": 0, "Wt": 0.9, "P:W": 0
+  },
+  {
+    "Name": "Standard Helm",
+    "PHY": 14, "STR": 8, "SLA": 16, "THR": 14,
+    "Mag": 8, "Fire": 8, "Lghtng": 3,
+    "Bld": 9, "Psn": 8, "Curse": 0,
+    "Pse": 5, "Wt": 3.5, "P:W": 1.4
+  },
+  {
+    "Name": "Steel Helm",
+    "PHY": 16, "STR": 15, "SLA": 18.4, "THR": 16,
+    "Mag": 8, "Fire": 8, "Lghtng": 5,
+    "Bld": 9, "Psn": 6, "Curse": 0,
+    "Pse": 9, "Wt": 5.4, "P:W": 1.7
+  },
+  {
+    "Name": "Stone Helm",
+    "PHY": 35, "STR": 32.9, "SLA": 40.3, "THR": 35,
+    "Mag": 17, "Fire": 21, "Lghtng": 21,
+    "Bld": 17, "Psn": 6, "Curse": 0,
+    "Pse": 15, "Wt": 6.8, "P:W": 2.2
+  },
+  {
+    "Name": "Sunlight Maggot",
+    "PHY": 6, "STR": 6, "SLA": 6, "THR": 6,
+    "Mag": 5, "Fire": 24, "Lghtng": 13,
+    "Bld": 0, "Psn": 0, "Curse": 0,
+    "Pse": 0, "Wt": 1.4, "P:W": 0
+  },
+  {
+    "Name": "Symbol of Avarice",
+    "PHY": 21, "STR": 10.9, "SLA": 21, "THR": 21,
+    "Mag": 8, "Fire": 2, "Lghtng": 2,
+    "Bld": 10, "Psn": 0, "Curse": 0,
+    "Pse": 15, "Wt": 10.0, "P:W": 1.5
+  },
+  {
+    "Name": "Tattered Cloth Hood",
+    "PHY": 8, "STR": 8.9, "SLA": 8, "THR": 8,
+    "Mag": 9, "Fire": 12, "Lghtng": 6,
+    "Bld": 9, "Psn": 23, "Curse": 1,
+    "Pse": 0, "Wt": 1.1, "P:W": 0
+  },
+  {
+    "Name": "Thief Mask",
+    "PHY": 9, "STR": 9.6, "SLA": 9, "THR": 9,
+    "Mag": 8, "Fire": 5, "Lghtng": 6,
+    "Bld": 9, "Psn": 12, "Curse": 0,
+    "Pse": 0, "Wt": 1.2, "P:W": 0
+  },
+  {
+    "Name": "Wanderer Hood",
+    "PHY": 9, "STR": 9.6, "SLA": 9.6, "THR": 9,
+    "Mag": 8, "Fire": 10, "Lghtng": 9,
+    "Bld": 8, "Psn": 8, "Curse": 0,
+    "Pse": 0, "Wt": 1.4, "P:W": 0
+  },
+  {
+    "Name": "Witch Hat",
+    "PHY": 9, "STR": 10, "SLA": 9, "THR": 9,
+    "Mag": 12, "Fire": 6, "Lghtng": 7,
+    "Bld": 10, "Psn": 10, "Curse": 11,
+    "Pse": 0, "Wt": 1.1, "P:W": 0
+  },
+  {
+    "Name": "Xanthous Crown",
+    "PHY": 18, "STR": 27.7, "SLA": 18, "THR": 15.3,
+    "Mag": 15, "Fire": 3, "Lghtng": 8,
+    "Bld": 8, "Psn": 11, "Curse": 35,
+    "Pse": 0, "Wt": 5, "P:W": 0
+  }
+]

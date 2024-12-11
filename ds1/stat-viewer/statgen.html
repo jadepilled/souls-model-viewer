@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+<title>Item Viewer</title>
+<style>
+  body {
+    background-color: #222222;
+    color: #ffffff;
+    font-family: Spectral, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .widget-container {
+    width: 200px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .item-icon-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .gender-toggle, .upgrade-toggle {
+    position: absolute;
+    background: #555555;
+    color: #ffffff;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 10;
+  }
+  .gender-toggle {
+    top: 5px;
+    right: 5px;
+  }
+  .upgrade-toggle {
+    bottom: 5px;
+    right: 5px;
+  }
+  .upgrade-prompt {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    background: #000000aa;
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 20;
+  }
+  #item-icon {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  table {
+    border-collapse: collapse;
+    width: 200px;
+    background: #444444;
+    color: #ffffff;
+    margin: 0 auto;
+  }
+  th, td {
+    padding: 5px;
+    border-bottom: 1px solid #555555;
+    text-align: center;
+    font-size: 0.9em;
+    vertical-align: middle;
+    width: 25%;
+  }
+  .stat-icon {
+    vertical-align: middle;
+  }
+
+  /* Fade text only */
+  .stat-text {
+    transition: color 0.5s ease;
+    color: #ffffff; /* Normal color */
+  }
+
+  .fade-text .stat-text {
+    color: transparent;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <div class="item-icon-container">
+    <img id="item-icon" src="" alt="Item Icon" style="max-width: 150px; max-height: 150px;"/>
+    <div class="gender-toggle" id="gender-toggle" style="display:none;">Switch</div>
+    <div class="upgrade-toggle" id="upgrade-toggle" style="display:none;">Base</div>
+    <div class="upgrade-prompt" id="upgrade-prompt">Item cannot be upgraded</div>
+  </div>
+  <table id="stats-table">
+    <tbody>
+      <tr id="row-icons-g1"></tr>
+      <tr id="row-values-g1"></tr>
+      <tr id="row-icons-g2"></tr>
+      <tr id="row-values-g2"></tr>
+      <tr id="row-icons-g3"></tr>
+      <tr id="row-values-g3"></tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+// Utility functions
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+function stripGenderSuffix(name) {
+  return name.replace(/\(Male\)/i, "").replace(/\(Female\)/i, "").trim();
+}
+
+const statInfo = {
+  "PHY": { alt: "Physical Defense", title: "Physical Defense" },
+  "STR": { alt: "Strike Defense", title: "Strike Defense" },
+  "SLA": { alt: "Slash Defense", title: "Slash Defense" },
+  "THR": { alt: "Thrust Defense", title: "Thrust Defense" },
+  "Mag": { alt: "Magic Defense", title: "Magic Defense" },
+  "Fire": { alt: "Fire Defense", title: "Fire Defense" },
+  "Lghtng": { alt: "Lightning Defense", title: "Lightning Defense" },
+  "Bld": { alt: "Bleed Resist", title: "Bleed Resist" },
+  "Psn": { alt: "Poison Resist", title: "Poison Resist" },
+  "Curse": { alt: "Curse Resist", title: "Curse Resist" },
+  "Pse": { alt: "Poise", title: "Poise" },
+  "Wt": { alt: "Weight", title: "Weight" }
+};
+
+const topStats = ["PHY","STR","SLA","THR"];
+const midStats = ["Mag","Fire","Lghtng","Bld"];
+const botStats = ["Psn","Curse","Pse","Wt"];
+
+let isMale = false;
+let isFemale = false;
+let currentItemBase = null;
+let currentItemUpgraded = null;
+let currentUpgradeState = 'base'; 
+let maxUpgradeLevel = null;
+let baseName = "";
+let itemIcon = null;
+let genderToggle = null;
+let upgradeToggle = null;
+let upgradePrompt = null;
+
+function showUpgradePrompt(message) {
+  upgradePrompt.textContent = message;
+  upgradePrompt.style.opacity = 1;
+  upgradePrompt.style.pointerEvents = 'auto';
+  setTimeout(() => {
+    upgradePrompt.style.opacity = 0;
+    upgradePrompt.style.pointerEvents = 'none';
+  }, 2000);
+}
+
+function preloadAndSetIcon(newPath, fallbackPath=null) {
+  const tempImg = new Image();
+  tempImg.onload = () => {
+    itemIcon.style.opacity = 0;
+    setTimeout(() => {
+      itemIcon.src = tempImg.src;
+      requestAnimationFrame(() => {
+        itemIcon.style.opacity = 1;
+      });
+    }, 200);
+  };
+  tempImg.onerror = () => {
+    if (fallbackPath) {
+      const fallbackImg = new Image();
+      fallbackImg.onload = () => {
+        itemIcon.style.opacity = 0;
+        setTimeout(() => {
+          itemIcon.src = fallbackImg.src;
+          itemIcon.style.opacity = 1;
+        },200);
+      };
+      fallbackImg.src = fallbackPath;
+    }
+  };
+  tempImg.src = newPath;
+}
+
+function fillStatsTable(data) {
+  ["row-icons-g1","row-values-g1","row-icons-g2","row-values-g2","row-icons-g3","row-values-g3"]
+    .forEach(id => {
+      const row = document.getElementById(id);
+      while(row.firstChild) row.removeChild(row.firstChild);
+    });
+
+  function appendCells(iconsRowId, valuesRowId, statsArray) {
+    const iconsRow = document.getElementById(iconsRowId);
+    const valuesRow = document.getElementById(valuesRowId);
+
+    statsArray.forEach(stat => {
+      const info = statInfo[stat] || {alt:stat, title:stat};
+
+      const iconCell = document.createElement("td");
+      if (data[stat] !== undefined) {
+        iconCell.innerHTML = `<img class="stat-icon" src="icons/${stat}.png" alt="${info.alt}" title="${info.title}" height="16"/>`;
+      } else {
+        iconCell.innerHTML = "";
+      }
+      iconsRow.appendChild(iconCell);
+
+      const valueCell = document.createElement("td");
+      if (data[stat] !== undefined) {
+        const span = document.createElement('span');
+        span.className = 'stat-text';
+        span.textContent = data[stat];
+        valueCell.appendChild(span);
+      } else {
+        valueCell.textContent = "";
+      }
+      valuesRow.appendChild(valueCell);
+    });
+  }
+
+  appendCells("row-icons-g1", "row-values-g1", topStats);
+  appendCells("row-icons-g2", "row-values-g2", midStats);
+  appendCells("row-icons-g3", "row-values-g3", botStats);
+}
+
+function fadeTextOutAndIn(updateFunc) {
+  const container = document.querySelector('.widget-container');
+  container.classList.add('fade-text');
+  setTimeout(() => {
+    updateFunc();
+    // After updating data, remove class to fade back in
+    requestAnimationFrame(() => {
+      container.classList.remove('fade-text');
+    });
+  }, 250); // Wait for fade out before updating
+}
+
+function updateStatsView() {
+  fadeTextOutAndIn(() => {
+    if (currentUpgradeState === 'base' || !currentItemUpgraded) {
+      fillStatsTable(currentItemBase);
+    } else {
+      fillStatsTable(currentItemUpgraded);
+    }
+  });
+}
+
+function toggleUpgrade() {
+  if (!maxUpgradeLevel) {
+    showUpgradePrompt("Item cannot be upgraded");
+    return;
+  }
+  if (currentUpgradeState === 'base') {
+    currentUpgradeState = 'upgrade';
+    upgradeToggle.textContent = `+${maxUpgradeLevel}`;
+    updateStatsView();
+  } else {
+    currentUpgradeState = 'base';
+    upgradeToggle.textContent = "Base";
+    updateStatsView();
+  }
+}
+
+function detectUpgrades(baseItem, upgradedData) {
+  const upgradeItems = upgradedData.filter(i => i.Name.toLowerCase().startsWith(baseName.toLowerCase()+" "));
+  if (upgradeItems.length === 0) return null;
+
+  let maxUp = null;
+  let maxItem = null;
+  upgradeItems.forEach(u => {
+    const match = u.Name.match(/\+(\d+)/);
+    if (match) {
+      const lvl = parseInt(match[1],10);
+      if (!maxUp || lvl > maxUp) {
+        maxUp = lvl;
+        maxItem = u;
+      }
+    }
+  });
+  if (maxUp) {
+    return { level: maxUp, item: maxItem };
+  }
+  return null;
+}
+
+Promise.all([
+  fetch('stats.json').then(r=>r.json()),
+  fetch('stats-max.json').then(r=>r.json())
+]).then(([baseData, upgradedData]) => {
+  let queryName = getQueryParam("item");
+  if(!queryName) return;
+
+  isMale = /\(Male\)/i.test(queryName);
+  isFemale = /\(Female\)/i.test(queryName);
+  baseName = stripGenderSuffix(queryName);
+
+  currentItemBase = baseData.find(i => i.Name.toLowerCase() === baseName.toLowerCase());
+  if(!currentItemBase) return;
+
+  const upgradeCheck = detectUpgrades(currentItemBase, upgradedData);
+  if (upgradeCheck) {
+    maxUpgradeLevel = upgradeCheck.level;
+    currentItemUpgraded = upgradeCheck.item;
+  }
+
+  itemIcon = document.getElementById("item-icon");
+  genderToggle = document.getElementById("gender-toggle");
+  upgradeToggle = document.getElementById("upgrade-toggle");
+  upgradePrompt = document.getElementById("upgrade-prompt");
+
+  let iconName = queryName;
+  let iconPath = `icons/${iconName}.webp`;
+  preloadAndSetIcon(iconPath, `icons/${baseName}.webp`);
+
+  if(isMale || isFemale) {
+    genderToggle.style.display = "block";
+    let currentIsMale = isMale;
+    let currentIsFemale = isFemale;
+    genderToggle.addEventListener("click", () => {
+      let newGender = currentIsMale ? "(Female)" : "(Male)";
+      let newName = baseName + " " + newGender;
+      let newPath = `icons/${newName}.webp`;
+      preloadAndSetIcon(newPath, `icons/${baseName}.webp`);
+      currentIsMale = !currentIsMale;
+      currentIsFemale = !currentIsFemale;
+    });
+  }
+
+  if (currentItemUpgraded) {
+    upgradeToggle.style.display = "block";
+    upgradeToggle.textContent = "Base";
+    upgradeToggle.addEventListener("click", toggleUpgrade);
+  } else {
+    upgradeToggle.style.display = "block";
+    upgradeToggle.textContent = "Base";
+    upgradeToggle.addEventListener("click", () => {
+      showUpgradePrompt("Item cannot be upgraded");
+    });
+  }
+
+  updateStatsView();
+}).catch(error => {
+  console.error("Error loading data:", error);
+});
+</script>
+</body>
+</html>
