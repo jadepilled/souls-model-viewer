@@ -18,45 +18,69 @@
 			background-color:#222222;
         }
 		h1 {
-		font-size: 14px;
-		color:#777;
-		margin: 0px;
+		    font-size: 14px;
+		    color:#777;
+		    margin: 0px;
 		}
         model-viewer {
             width: 400px;
             height: 400px;
         }
         /* Hide the default loading bar */
-        model-viewer::part(progress-bar) {
+        model-viewer::part(default-progress-bar),
+model-viewer::part(progress-bar) {
+    display: none;
+    background: transparent;
+}
+model-viewer::part(bar) {
+    display: none;
+    background: transparent;
+}
+        /* Custom context menu styling */
+        #context-menu {
             display: none;
-        } 
-    /* Custom context menu styling */
-    #context-menu {
-        display: none;
-        position: absolute;
-        background-color: #111111; /* Dark background */
-        color: #666; /* Light gray text */
-        border: 1px solid #444; /* Subtle border */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for depth */
-        z-index: 1000;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        border-radius: 4px; /* Rounded corners */
-        overflow: hidden;
-    }
-    #context-menu li {
-        padding: 10px 15px;
-        cursor: pointer;
-        white-space: nowrap;
-        transition: background-color 0.3s, color 0.3s;
-    }
-    #context-menu li:hover {
-        background-color: #444; /* Slightly lighter on hover */
-        color: #fff; /* White text on hover */
-    }
-</style>
+            position: absolute;
+            background-color: #111111; /* Dark background */
+            color: #666; /* Light gray text */
+            border: 1px solid #444; /* Subtle border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 4px; /* Rounded corners */
+            overflow: hidden;
+        }
+        #context-menu li {
+            padding: 10px 15px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        #context-menu li:hover {
+            background-color: #444; /* Slightly lighter on hover */
+            color: #fff; /* White text on hover */
+        }
 
+        /* Gender toggle container */
+        #gender-toggle-container {
+            margin-top: 10px;
+            display: none;
+        }
+        #gender-toggle-container button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #ccc;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #gender-toggle-container button:hover {
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <h1 id="header">3D Model Viewer</h1>
@@ -69,6 +93,12 @@
         alt="A 3D model"
         style="width: 300px; height: 300px;">
     </model-viewer>
+
+    <div id="gender-toggle-container">
+        <button id="male-btn">Type A</button>
+        <button id="female-btn">Type B</button>
+    </div>
+
     <ul id="context-menu">
         <li id="download-model">Download Model</li>
         <li id="view-larger">View Larger</li>
@@ -79,19 +109,23 @@
         const contextMenu = document.getElementById('context-menu');
         const downloadOption = document.getElementById('download-model');
         const viewLargerOption = document.getElementById('view-larger');
+        const genderToggleContainer = document.getElementById('gender-toggle-container');
+        const maleBtn = document.getElementById('male-btn');
+        const femaleBtn = document.getElementById('female-btn');
 
         // Get the model filename from the query parameter "model"
         const urlParams = new URLSearchParams(window.location.search);
-        const model = urlParams.get('model'); // E.g., ?model=Dagger.glb
+        let model = urlParams.get('model'); // E.g., ?model=Sword(M).glb
+
+        function loadModel(modelName) {
+            viewer.setAttribute('src', `./hands/${modelName}`);
+            const header = document.getElementById('header');
+            const baseName = modelName.replace('.glb', '');
+            header.textContent = `${baseName} - 3D model`;
+        }
 
         if (model) {
-            viewer.setAttribute('src', `./hands/${model}`);
-
-            // Extract the model name (e.g., "Dagger" from "Dagger.glb")
-            const modelName = model.replace('.glb', '');
-            // Update the header text
-            const header = document.getElementById('header');
-            header.textContent = `${modelName} - 3D model`;
+            loadModel(model);
 
             // Add download functionality
             downloadOption.addEventListener('click', () => {
@@ -108,6 +142,24 @@
                 window.open(largerViewerUrl, '_blank', 'width=1000,height=1000');
                 hideContextMenu();
             });
+
+            // Check if model ends with (M). If yes, show gender toggle
+            const modelBaseName = model.replace('.glb', '');
+            if (modelBaseName.endsWith('(M)')) {
+                genderToggleContainer.style.display = 'block';
+
+                maleBtn.addEventListener('click', () => {
+                    // Switch back to male version
+                    model = model.replace('(F)', '(M)');
+                    loadModel(model);
+                });
+
+                femaleBtn.addEventListener('click', () => {
+                    // Switch to female version
+                    model = model.replace('(M)', '(F)');
+                    loadModel(model);
+                });
+            }
         } else {
             console.error("No model specified in the URL. Use ?model=filename.glb");
         }
@@ -128,7 +180,6 @@
         function hideContextMenu() {
             contextMenu.style.display = 'none';
         }
-		
     </script>
 </body>
 </html>
