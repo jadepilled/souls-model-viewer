@@ -1,0 +1,1166 @@
+WP_A_0100 Dagger
+WP_A_0100 Crystal Dagger
+WP_A_0100 Lightning Dagger
+WP_A_0100 Raw Dagger
+WP_A_0100 Magic Dagger
+WP_A_0100 Enchanted Dagger
+WP_A_0100 Divine Dagger
+WP_A_0100 Occult Dagger
+WP_A_0100 Fire Dagger
+WP_A_0100 Chaos Dagger
+WP_A_0101 Bandit's Knife
+WP_A_0101 Crystal Knife
+WP_A_0101 Lightning Knife
+WP_A_0101 Raw Knife
+WP_A_0101 Magic Knife
+WP_A_0101 Enchanted Knife
+WP_A_0101 Divine Knife
+WP_A_0101 Occult Knife
+WP_A_0101 Fire Knife
+WP_A_0101 Chaos Knife
+WP_A_0102 Jagged Ghost Blade
+WP_A_0103 Ghost Blade
+WP_A_0104 Priscilla's Dagger
+WP_A_0106 Mail Breaker
+WP_A_0106 Crystal Mail Breaker
+WP_A_0106 Lightning Mail Breaker
+WP_A_0106 Raw Mail Breaker
+WP_A_0106 Magic Mail Breaker
+WP_A_0106 Enchanted Mail Breaker
+WP_A_0106 Divine Mail Breaker
+WP_A_0106 Occult Mail Breaker
+WP_A_0106 Fire Mail Breaker
+WP_A_0106 Chaos Mail Breaker
+WP_A_0107 Parrying Dagger
+WP_A_0107 Crystal Parrying Dagger
+WP_A_0107 Lightning Parrying Dagger
+WP_A_0107 Raw Parrying Dagger
+WP_A_0107 Magic Parrying Dagger
+WP_A_0107 Enchanted Parrying Dagger
+WP_A_0107 Divine Parrying Dagger
+WP_A_0107 Occult Parrying Dagger
+WP_A_0107 Fire Parrying Dagger
+WP_A_0107 Chaos Parrying Dagger
+WP_A_0200 Broken Straight Sword
+WP_A_0200 Crys. Broken Str. Sword
+WP_A_0200 Ltng. Broken Str. Sword
+WP_A_0200 Raw Broken Straight Sword
+WP_A_0200 Magic Broken Straight Sword
+WP_A_0200 Ench. Broken Str. Sword
+WP_A_0200 Div. Broken Str. Sword
+WP_A_0200 Occ. Broken Str. Sword
+WP_A_0200 Fire Broken Straight Sword
+WP_A_0200 Chaos Broken Straight Sword
+WP_A_0201 Longsword
+WP_A_0201 Crystal Longsword
+WP_A_0201 Lightning Longsword
+WP_A_0201 Raw Longsword
+WP_A_0201 Magic Longsword
+WP_A_0201 Enchanted Longsword
+WP_A_0201 Divine Longsword
+WP_A_0201 Occult Longsword
+WP_A_0201 Fire Longsword
+WP_A_0201 Chaos Longsword
+WP_A_0202 Balder Side Sword
+WP_A_0202 Crystal Balder Side Sword
+WP_A_0202 Lightning Balder Side Sword
+WP_A_0202 Raw Balder Side Sword
+WP_A_0202 Magic Balder Side Sword
+WP_A_0202 Enchanted Balder Side Sword
+WP_A_0202 Divine Balder Side Sword
+WP_A_0202 Occult Balder Side Sword
+WP_A_0202 Fire Balder Side Sword
+WP_A_0202 Chaos Balder Side Sword
+WP_A_0203 Crystal Straight Sword
+WP_A_0204 Broadsword
+WP_A_0204 Crystal Broadsword
+WP_A_0204 Lightning Broadsword
+WP_A_0204 Raw Broadsword
+WP_A_0204 Magic Broadsword
+WP_A_0204 Enchanted Broadsword
+WP_A_0204 Divine Broadsword
+WP_A_0204 Occult Broadsword
+WP_A_0204 Fire Broadsword
+WP_A_0204 Chaos Broadsword
+WP_A_0206 Bastard Sword
+WP_A_0206 Crystal Bastard Sword
+WP_A_0206 Lightning Bastard Sword
+WP_A_0206 Raw Bastard Sword
+WP_A_0206 Magic Bastard Sword
+WP_A_0206 Enchanted Bastard Sword
+WP_A_0206 Divine Bastard Sword
+WP_A_0206 Occult Bastard Sword
+WP_A_0206 Fire Bastard Sword
+WP_A_0206 Chaos Bastard Sword
+WP_A_0207 Shortsword
+WP_A_0207 Crystal Shortsword
+WP_A_0207 Lightning Shortsword
+WP_A_0207 Raw Shortsword
+WP_A_0207 Magic Shortsword
+WP_A_0207 Enchanted Shortsword
+WP_A_0207 Divine Shortsword
+WP_A_0207 Occult Shortsword
+WP_A_0207 Fire Shortsword
+WP_A_0207 Chaos Shortsword
+WP_A_0208 Zweihander
+WP_A_0208 Crystal Zweihander
+WP_A_0208 Lightning Zweihander
+WP_A_0208 Raw Zweihander
+WP_A_0208 Magic Zweihander
+WP_A_0208 Enchanted Zweihander
+WP_A_0208 Divine Zweihander
+WP_A_0208 Occult Zweihander
+WP_A_0208 Fire Zweihander
+WP_A_0208 Chaos Zweihander
+WP_A_0210 Man-serpent Greatsword
+WP_A_0210 Crys. Man-srp. Greatsword
+WP_A_0210 Ltng. Man-srp. Greatsword
+WP_A_0210 Raw Man-serpent Greatsword
+WP_A_0210 Magic Man-srp. Greatsword
+WP_A_0210 Ench. Man-srp. Greatsword
+WP_A_0210 Div. Man-srp. Greatsword
+WP_A_0210 Occ. Man-srp. Greatsword
+WP_A_0210 Fire Man-serpent Greatsword
+WP_A_0210 Chaos Man-srp. Greatsword
+WP_A_0211 Flamberge
+WP_A_0211 Crystal Flamberge
+WP_A_0211 Lightning Flamberge
+WP_A_0211 Raw Flamberge
+WP_A_0211 Magic Flamberge
+WP_A_0211 Enchanted Flamberge
+WP_A_0211 Divine Flamberge
+WP_A_0211 Occult Flamberge
+WP_A_0211 Fire Flamberge
+WP_A_0211 Chaos Flamberge
+WP_A_0212 Silv. Knight Str. Sword
+WP_A_0213 Quelaag's Furysword
+WP_A_0213 Quelaag's Furysword (1)
+WP_A_0213 Quelaag's Furysword (2)
+WP_A_0213 Quelaag's Furysword (3)
+WP_A_0213 Quelaag's Furysword (4)
+WP_A_0213 Quelaag's Furysword (5)
+WP_A_0220 Stone Greatsword
+WP_A_0221 Black Knight Greatsword
+WP_A_0230 Velka's Rapier
+WP_A_0231 Sunlight Straight Sword
+WP_A_0231 Crys. Sunlight Str. Sword
+WP_A_0231 Ltng. Sunlight Str. Sword
+WP_A_0231 Raw Sunlight Straight Sword
+WP_A_0231 Magic Sunlight Str. Sword
+WP_A_0231 Ench. Sunlight Str. Sword
+WP_A_0231 Div. Sunlight Str. Sword
+WP_A_0231 Occ. Sunlight Str. Sword
+WP_A_0231 Fire Sunlight Str. Sword
+WP_A_0231 Chaos Sunlight Str. Sword
+WP_A_0251 Greatsword
+WP_A_0251 Crystal Greatsword
+WP_A_0251 Lightning Greatsword
+WP_A_0251 Raw Greatsword
+WP_A_0251 Magic Greatsword
+WP_A_0251 Enchanted Greatsword
+WP_A_0251 Divine Greatsword
+WP_A_0251 Occult Greatsword
+WP_A_0251 Fire Greatsword
+WP_A_0251 Chaos Greatsword
+WP_A_0252 Butcher Knife
+WP_A_0252 Crystal Butcher Knife
+WP_A_0252 Lightning Butcher Knife
+WP_A_0252 Raw Butcher Knife
+WP_A_0252 Magic Butcher Knife
+WP_A_0252 Enchanted Butcher Knife
+WP_A_0252 Divine Butcher Knife
+WP_A_0252 Occult Butcher Knife
+WP_A_0252 Fire Butcher Knife
+WP_A_0252 Chaos Butcher Knife
+WP_A_0258 Moonlight Greatsword
+WP_A_0259 Black Knight Sword
+WP_A_0260 Darksword
+WP_A_0260 Crystal Darksword
+WP_A_0260 Lightning Darksword
+WP_A_0260 Raw Darksword
+WP_A_0260 Magic Darksword
+WP_A_0260 Enchanted Darksword
+WP_A_0260 Divine Darksword
+WP_A_0260 Occult Darksword
+WP_A_0260 Fire Darksword
+WP_A_0260 Chaos Darksword
+WP_A_0263 Crystal Greatsword (1)
+WP_A_0264 Barbed Straight Sword
+WP_A_0264 Crys. Barbed Str. Sword
+WP_A_0264 Ltng. Barbed Str. Sword
+WP_A_0264 Raw Barbed Straight Sword
+WP_A_0264 Magic Barbed Straight Sword
+WP_A_0264 Ench. Barbed Str. Sword
+WP_A_0264 Div. Barbed Str. Sword
+WP_A_0264 Occ. Barbed Str. Sword
+WP_A_0264 Fire Barbed Straight Sword
+WP_A_0264 Chaos Barbed Straight Sword
+WP_A_0266 Claymore
+WP_A_0266 Crystal Claymore
+WP_A_0266 Lightning Claymore
+WP_A_0266 Raw Claymore
+WP_A_0266 Magic Claymore
+WP_A_0266 Enchanted Claymore
+WP_A_0266 Divine Claymore
+WP_A_0266 Occult Claymore
+WP_A_0266 Fire Claymore
+WP_A_0266 Chaos Claymore
+WP_A_0267 Greatsword of Artorias
+WP_A_0267 Greatsword of Artorias (1)
+WP_A_0268 Great Lord Greatsword
+WP_A_0268 Great Lord Greatsword (1)
+WP_A_0268 Great Lord Greatsword (2)
+WP_A_0268 Great Lord Greatsword (3)
+WP_A_0268 Great Lord Greatsword (4)
+WP_A_0268 Great Lord Greatsword (5)
+WP_A_0268 Great Lord Greatsword (6)
+WP_A_0268 Great Lord Greatsword (7)
+WP_A_0268 Great Lord Greatsword (8)
+WP_A_0268 Great Lord Greatsword (9)
+WP_A_0268 Great Lord Greatsword (10)
+WP_A_0268 Great Lord Greatsword (11)
+WP_A_0268 Great Lord Greatsword (12)
+WP_A_0268 Great Lord Greatsword (13)
+WP_A_0268 Great Lord Greatsword (14)
+WP_A_0268 Great Lord Greatsword (15)
+WP_A_0268 Great Lord Greatsword (16)
+WP_A_0268 Great Lord Greatsword (17)
+WP_A_0269 Greatsword of Artorias (2)
+WP_A_0269 Greatsword of Artorias (3)
+WP_A_0269 Greatsword of Artorias (4)
+WP_A_0269 Greatsword of Artorias (5)
+WP_A_0269 Greatsword of Artorias (6)
+WP_A_0269 Greatsword of Artorias (7)
+WP_A_0269 Greatsword of Artorias (8)
+WP_A_0269 Greatsword of Artorias (9)
+WP_A_0269 Greatsword of Artorias (10)
+WP_A_0269 Greatsword of Artorias (11)
+WP_A_0269 Greatsword of Artorias (12)
+WP_A_0269 Greatsword of Artorias (13)
+WP_A_0269 Greatsword of Artorias (14)
+WP_A_0269 Greatsword of Artorias (15)
+WP_A_0269 Greatsword of Artorias (16)
+WP_A_0269 Greatsword of Artorias (17)
+WP_A_0269 Greatsword of Artorias (18)
+WP_A_0269 Greatsword of Artorias (19)
+WP_A_0270 Demon Great Machete
+WP_A_0270 Crystal Demon Great Machete
+WP_A_0270 Ltng. Demon Great Machete
+WP_A_0270 Raw Demon Great Machete
+WP_A_0270 Magic Demon Great Machete
+WP_A_0270 Ench. Demon Great Machete
+WP_A_0270 Divine Demon Great Machete
+WP_A_0270 Occult Demon Great Machete
+WP_A_0270 Fire Demon Great Machete
+WP_A_0270 Chaos Demon Great Machete
+WP_A_0271 Astora's Straight Sword
+WP_A_0272 Straight Sword Hilt
+WP_A_0272 Crystal Straight Sword Hilt
+WP_A_0272 Ltng. Str. Sword Hilt
+WP_A_0272 Raw Straight Sword Hilt
+WP_A_0272 Magic Straight Sword Hilt
+WP_A_0272 Ench. Straight Sword Hilt
+WP_A_0272 Divine Straight Sword Hilt
+WP_A_0272 Occult Straight Sword Hilt
+WP_A_0272 Fire Straight Sword Hilt
+WP_A_0272 Chaos Straight Sword Hilt
+WP_A_0280 Server
+WP_A_0280 Crystal Server
+WP_A_0280 Lightning Server
+WP_A_0280 Raw Server
+WP_A_0280 Magic Server
+WP_A_0280 Enchanted Server
+WP_A_0280 Divine Server
+WP_A_0280 Occult Server
+WP_A_0280 Fire Server
+WP_A_0280 Chaos Server
+WP_A_0281 Dragon Greatsword
+WP_A_0282 Gravelord Sword
+WP_A_0284 Murakumo
+WP_A_0284 Crystal Murakumo
+WP_A_0284 Lightning Murakumo
+WP_A_0284 Raw Murakumo
+WP_A_0284 Magic Murakumo
+WP_A_0284 Enchanted Murakumo
+WP_A_0284 Divine Murakumo
+WP_A_0284 Occult Murakumo
+WP_A_0284 Fire Murakumo
+WP_A_0284 Chaos Murakumo
+WP_A_0291 Drake Sword
+WP_A_0300 Rapier
+WP_A_0300 Crystal Rapier
+WP_A_0300 Lightning Rapier
+WP_A_0300 Raw Rapier
+WP_A_0300 Magic Rapier
+WP_A_0300 Enchanted Rapier
+WP_A_0300 Divine Rapier
+WP_A_0300 Occult Rapier
+WP_A_0300 Fire Rapier
+WP_A_0300 Chaos Rapier
+WP_A_0301 Estoc
+WP_A_0301 Crystal Estoc
+WP_A_0301 Lightning Estoc
+WP_A_0301 Raw Estoc
+WP_A_0301 Magic Estoc
+WP_A_0301 Enchanted Estoc
+WP_A_0301 Divine Estoc
+WP_A_0301 Occult Estoc
+WP_A_0301 Fire Estoc
+WP_A_0301 Chaos Estoc
+WP_A_0302 Ricard's Rapier
+WP_A_0302 Crystal Ricard's Rapier
+WP_A_0302 Lightning Ricard's Rapier
+WP_A_0302 Raw Ricard's Rapier
+WP_A_0302 Magic Ricard's Rapier
+WP_A_0302 Enchanted Ricard's Rapier
+WP_A_0302 Divine Ricard's Rapier
+WP_A_0302 Occult Ricard's Rapier
+WP_A_0302 Fire Ricard's Rapier
+WP_A_0302 Chaos Ricard's Rapier
+WP_A_0400 Scimitar
+WP_A_0400 Crystal Scimitar
+WP_A_0400 Lightning Scimitar
+WP_A_0400 Raw Scimitar
+WP_A_0400 Magic Scimitar
+WP_A_0400 Enchanted Scimitar
+WP_A_0400 Divine Scimitar
+WP_A_0400 Occult Scimitar
+WP_A_0400 Fire Scimitar
+WP_A_0400 Chaos Scimitar
+WP_A_0401 Falchion
+WP_A_0401 Crystal Falchion
+WP_A_0401 Lightning Falchion
+WP_A_0401 Raw Falchion
+WP_A_0401 Magic Falchion
+WP_A_0401 Enchanted Falchion
+WP_A_0401 Divine Falchion
+WP_A_0401 Occult Falchion
+WP_A_0401 Fire Falchion
+WP_A_0401 Chaos Falchion
+WP_A_0402 Uchigatana
+WP_A_0402 Crystal Uchigatana
+WP_A_0402 Lightning Uchigatana
+WP_A_0402 Raw Uchigatana
+WP_A_0402 Magic Uchigatana
+WP_A_0402 Enchanted Uchigatana
+WP_A_0402 Divine Uchigatana
+WP_A_0402 Occult Uchigatana
+WP_A_0402 Fire Uchigatana
+WP_A_0402 Chaos Uchigatana
+WP_A_0403 Shotel
+WP_A_0403 Crystal Shotel
+WP_A_0403 Lightning Shotel
+WP_A_0403 Raw Shotel
+WP_A_0403 Magic Shotel
+WP_A_0403 Enchanted Shotel
+WP_A_0403 Divine Shotel
+WP_A_0403 Occult Shotel
+WP_A_0403 Fire Shotel
+WP_A_0403 Chaos Shotel
+WP_A_0406 Painting Guardian Sword
+WP_A_0406 Crys. Ptg. Guardian Sword
+WP_A_0406 Ltng. Ptg. Guardian Sword
+WP_A_0406 Raw Painting Guardian Sword
+WP_A_0406 Magic Ptg. Guardian Sword
+WP_A_0406 Ench. Ptg. Guardian Sword
+WP_A_0406 Div. Ptg. Guardian Sword
+WP_A_0406 Occ. Ptg. Guardian Sword
+WP_A_0406 Fire Ptg. Guardian Sword
+WP_A_0406 Chaos Ptg. Guardian Sword
+WP_A_0450 Washing Pole
+WP_A_0450 Crystal Washing Pole
+WP_A_0450 Lightning Washing Pole
+WP_A_0450 Raw Washing Pole
+WP_A_0450 Magic Washing Pole
+WP_A_0450 Enchanted Washing Pole
+WP_A_0450 Divine Washing Pole
+WP_A_0450 Occult Washing Pole
+WP_A_0450 Fire Washing Pole
+WP_A_0450 Chaos Washing Pole
+WP_A_0451 Chaos Blade
+WP_A_0451 Chaos Blade (1)
+WP_A_0451 Chaos Blade (2)
+WP_A_0452 Iaito
+WP_A_0452 Crystal Iaito
+WP_A_0452 Lightning Iaito
+WP_A_0452 Raw Iaito
+WP_A_0452 Magic Iaito
+WP_A_0452 Enchanted Iaito
+WP_A_0452 Divine Iaito
+WP_A_0452 Occult Iaito
+WP_A_0452 Fire Iaito
+WP_A_0452 Chaos Iaito
+WP_A_0502 Hand Axe
+WP_A_0502 Crystal Hand Axe
+WP_A_0502 Lightning Hand Axe
+WP_A_0502 Raw Hand Axe
+WP_A_0502 Magic Hand Axe
+WP_A_0502 Enchanted Hand Axe
+WP_A_0502 Divine Hand Axe
+WP_A_0502 Occult Hand Axe
+WP_A_0502 Fire Hand Axe
+WP_A_0502 Chaos Hand Axe
+WP_A_0503 Crescent Axe
+WP_A_0504 Greataxe
+WP_A_0504 Crystal Greataxe
+WP_A_0504 Lightning Greataxe
+WP_A_0504 Raw Greataxe
+WP_A_0504 Magic Greataxe
+WP_A_0504 Enchanted Greataxe
+WP_A_0504 Divine Greataxe
+WP_A_0504 Occult Greataxe
+WP_A_0504 Fire Greataxe
+WP_A_0504 Chaos Greataxe
+WP_A_0505 Battle Axe
+WP_A_0505 Crystal Battle Axe
+WP_A_0505 Lightning Battle Axe
+WP_A_0505 Raw Battle Axe
+WP_A_0505 Magic Battle Axe
+WP_A_0505 Enchanted Battle Axe
+WP_A_0505 Divine Battle Axe
+WP_A_0505 Occult Battle Axe
+WP_A_0505 Fire Battle Axe
+WP_A_0505 Chaos Battle Axe
+WP_A_0506 Dragon King Greataxe
+WP_A_0507 Black Knight Greataxe
+WP_A_0508 Golem Axe
+WP_A_0508 Golem Axe (1)
+WP_A_0508 Golem Axe (2)
+WP_A_0508 Golem Axe (3)
+WP_A_0508 Golem Axe (4)
+WP_A_0508 Golem Axe (5)
+WP_A_0508 Golem Axe (6)
+WP_A_0509 Gargoyle Tail Axe
+WP_A_0509 Crystal Gargoyle Tail Axe
+WP_A_0509 Lightning Gargoyle Tail Axe
+WP_A_0509 Raw Gargoyle Tail Axe
+WP_A_0509 Magic Gargoyle Tail Axe
+WP_A_0509 Enchanted Gargoyle Tail Axe
+WP_A_0509 Divine Gargoyle Tail Axe
+WP_A_0509 Occult Gargoyle Tail Axe
+WP_A_0509 Fire Gargoyle Tail Axe
+WP_A_0509 Chaos Gargoyle Tail Axe
+WP_A_0600 Club
+WP_A_0600 Crystal Club
+WP_A_0600 Lightning Club
+WP_A_0600 Raw Club
+WP_A_0600 Magic Club
+WP_A_0600 Enchanted Club
+WP_A_0600 Divine Club
+WP_A_0600 Occult Club
+WP_A_0600 Fire Club
+WP_A_0600 Chaos Club
+WP_A_0602 Reinforced Club
+WP_A_0602 Crystal Reinforced Club
+WP_A_0602 Lightning Reinforced Club
+WP_A_0602 Raw Reinforced Club
+WP_A_0602 Magic Reinforced Club
+WP_A_0602 Enchanted Reinforced Club
+WP_A_0602 Divine Reinforced Club
+WP_A_0602 Occult Reinforced Club
+WP_A_0602 Fire Reinforced Club
+WP_A_0602 Chaos Reinforced Club
+WP_A_0603 Morning Star
+WP_A_0603 Crystal Morning Star
+WP_A_0603 Lightning Morning Star
+WP_A_0603 Raw Morning Star
+WP_A_0603 Magic Morning Star
+WP_A_0603 Enchanted Morning Star
+WP_A_0603 Divine Morning Star
+WP_A_0603 Occult Morning Star
+WP_A_0603 Fire Morning Star
+WP_A_0603 Chaos Morning Star
+WP_A_0604 Warpick
+WP_A_0604 Crystal Warpick
+WP_A_0604 Lightning Warpick
+WP_A_0604 Raw Warpick
+WP_A_0604 Magic Warpick
+WP_A_0604 Enchanted Warpick
+WP_A_0604 Divine Warpick
+WP_A_0604 Occult Warpick
+WP_A_0604 Fire Warpick
+WP_A_0604 Chaos Warpick
+WP_A_0605 Pickaxe
+WP_A_0605 Crystal Pickaxe
+WP_A_0605 Lightning Pickaxe
+WP_A_0605 Raw Pickaxe
+WP_A_0605 Magic Pickaxe
+WP_A_0605 Enchanted Pickaxe
+WP_A_0605 Divine Pickaxe
+WP_A_0605 Occult Pickaxe
+WP_A_0605 Fire Pickaxe
+WP_A_0605 Chaos Pickaxe
+WP_A_0606 Mace
+WP_A_0606 Crystal Mace
+WP_A_0606 Lightning Mace
+WP_A_0606 Raw Mace
+WP_A_0606 Magic Mace
+WP_A_0606 Enchanted Mace
+WP_A_0606 Divine Mace
+WP_A_0606 Occult Mace
+WP_A_0606 Fire Mace
+WP_A_0606 Chaos Mace
+WP_A_0607 Great Club
+WP_A_0607 Crystal Great Club
+WP_A_0607 Lightning Great Club
+WP_A_0607 Raw Great Club
+WP_A_0607 Magic Great Club
+WP_A_0607 Enchanted Great Club
+WP_A_0607 Divine Great Club
+WP_A_0607 Occult Great Club
+WP_A_0607 Fire Great Club
+WP_A_0607 Chaos Great Club
+WP_A_0608 Grant
+WP_A_0651 Demon's Greataxe
+WP_A_0651 Crystal Demon's Greataxe
+WP_A_0651 Lightning Demon's Greataxe
+WP_A_0651 Raw Demon's Greataxe
+WP_A_0651 Magic Demon's Greataxe
+WP_A_0651 Enchanted Demon's Greataxe
+WP_A_0651 Divine Demon's Greataxe
+WP_A_0651 Occult Demon's Greataxe
+WP_A_0651 Fire Demon's Greataxe
+WP_A_0651 Chaos Demon's Greataxe
+WP_A_0652 Smough's Hammer
+WP_A_0652 Smough's Hammer (1)
+WP_A_0652 Smough's Hammer (2)
+WP_A_0652 Smough's Hammer (3)
+WP_A_0652 Smough's Hammer (4)
+WP_A_0652 Smough's Hammer (5)
+WP_A_0652 Smough's Hammer (6)
+WP_A_0652 Smough's Hammer (7)
+WP_A_0652 Smough's Hammer (8)
+WP_A_0652 Smough's Hammer (9)
+WP_A_0652 Smough's Hammer (10)
+WP_A_0652 Smough's Hammer (11)
+WP_A_0653 Demon's Catalyst
+WP_A_0654 Demon's Great Hammer
+WP_A_0654 Crys. Demon's Great Hammer
+WP_A_0654 Ltng. Demon's Gr. Hammer
+WP_A_0654 Raw Demon's Great Hammer
+WP_A_0654 Magic Demon's Gr. Hammer
+WP_A_0654 Ench. Demon's Gr. Hammer
+WP_A_0654 Div. Demon's Gr. Hammer
+WP_A_0654 Occ. Demon's Gr. Hammer
+WP_A_0654 Fire Demon's Great Hammer
+WP_A_0654 Chaos Demon's Great Hammer
+WP_A_0655 Dragon Tooth
+WP_A_0656 Blacksmith Hammer
+WP_A_0656 Crystal Blacksmith Hammer
+WP_A_0656 Lightning Blacksmith Hammer
+WP_A_0656 Raw Blacksmith Hammer
+WP_A_0656 Magic Blacksmith Hammer
+WP_A_0656 Enchanted Blacksmith Hammer
+WP_A_0656 Divine Blacksmith Hammer
+WP_A_0656 Occult Blacksmith Hammer
+WP_A_0656 Fire Blacksmith Hammer
+WP_A_0656 Chaos Blacksmith Hammer
+WP_A_0657 Blacksmith Giant Hammer
+WP_A_0658 Hammer of Vamos
+WP_A_0659 Large Club
+WP_A_0659 Crystal Large Club
+WP_A_0659 Lightning Large Club
+WP_A_0659 Raw Large Club
+WP_A_0659 Magic Large Club
+WP_A_0659 Enchanted Large Club
+WP_A_0659 Divine Large Club
+WP_A_0659 Occult Large Club
+WP_A_0659 Fire Large Club
+WP_A_0659 Chaos Large Club
+WP_A_0700 Spear
+WP_A_0700 Crystal Spear
+WP_A_0700 Lightning Spear
+WP_A_0700 Raw Spear
+WP_A_0700 Magic Spear
+WP_A_0700 Enchanted Spear
+WP_A_0700 Divine Spear
+WP_A_0700 Occult Spear
+WP_A_0700 Fire Spear
+WP_A_0700 Chaos Spear
+WP_A_0702 Winged Spear
+WP_A_0702 Crystal Winged Spear
+WP_A_0702 Lightning Winged Spear
+WP_A_0702 Raw Winged Spear
+WP_A_0702 Magic Winged Spear
+WP_A_0702 Enchanted Winged Spear
+WP_A_0702 Divine Winged Spear
+WP_A_0702 Occult Winged Spear
+WP_A_0702 Fire Winged Spear
+WP_A_0702 Chaos Winged Spear
+WP_A_0703 Partizan
+WP_A_0703 Crystal Partizan
+WP_A_0703 Lightning Partizan
+WP_A_0703 Raw Partizan
+WP_A_0703 Magic Partizan
+WP_A_0703 Enchanted Partizan
+WP_A_0703 Divine Partizan
+WP_A_0703 Occult Partizan
+WP_A_0703 Fire Partizan
+WP_A_0703 Chaos Partizan
+WP_A_0710 Demon's Spear
+WP_A_0720 Channeler's Trident
+WP_A_0721 Tin Banishment Catalyst
+WP_A_0730 Titanite Catch Pole
+WP_A_0731 Black Knight Halberd
+WP_A_0801 Great Scythe
+WP_A_0801 Crystal Great Scythe
+WP_A_0801 Lightning Great Scythe
+WP_A_0801 Raw Great Scythe
+WP_A_0801 Magic Great Scythe
+WP_A_0801 Enchanted Great Scythe
+WP_A_0801 Divine Great Scythe
+WP_A_0801 Occult Great Scythe
+WP_A_0801 Fire Great Scythe
+WP_A_0801 Chaos Great Scythe
+WP_A_0802 Lucerne
+WP_A_0802 Crystal Lucerne
+WP_A_0802 Lightning Lucerne
+WP_A_0802 Raw Lucerne
+WP_A_0802 Magic Lucerne
+WP_A_0802 Enchanted Lucerne
+WP_A_0802 Divine Lucerne
+WP_A_0802 Occult Lucerne
+WP_A_0802 Fire Lucerne
+WP_A_0802 Chaos Lucerne
+WP_A_0803 Scythe
+WP_A_0803 Crystal Scythe
+WP_A_0803 Lightning Scythe
+WP_A_0803 Raw Scythe
+WP_A_0803 Magic Scythe
+WP_A_0803 Enchanted Scythe
+WP_A_0803 Divine Scythe
+WP_A_0803 Occult Scythe
+WP_A_0803 Fire Scythe
+WP_A_0803 Chaos Scythe
+WP_A_0804 Halberd
+WP_A_0804 Crystal Halberd
+WP_A_0804 Lightning Halberd
+WP_A_0804 Raw Halberd
+WP_A_0804 Magic Halberd
+WP_A_0804 Enchanted Halberd
+WP_A_0804 Divine Halberd
+WP_A_0804 Occult Halberd
+WP_A_0804 Fire Halberd
+WP_A_0804 Chaos Halberd
+WP_A_0805 Giant's Halberd
+WP_A_0810 Lifehunt Scythe
+WP_A_0810 Lifehunt Scythe (1)
+WP_A_0810 Lifehunt Scythe (2)
+WP_A_0810 Lifehunt Scythe (3)
+WP_A_0810 Lifehunt Scythe (4)
+WP_A_0810 Lifehunt Scythe (5)
+WP_A_0810 Lifehunt Scythe (6)
+WP_A_0810 Lifehunt Scythe (7)
+WP_A_0811 Gargoyle's Halberd
+WP_A_0811 Crystal Gargoyle's Halberd
+WP_A_0811 Ltng. Gargoyle's Halberd
+WP_A_0811 Raw Gargoyle's Halberd
+WP_A_0811 Magic Gargoyle's Halberd
+WP_A_0811 Ench. Gargoyle's Halberd
+WP_A_0811 Divine Gargoyle's Halberd
+WP_A_0811 Occult Gargoyle's Halberd
+WP_A_0811 Fire Gargoyle's Halberd
+WP_A_0811 Chaos Gargoyle's Halberd
+WP_A_0901 Logan's Catalyst
+WP_A_0902 Talisman
+WP_A_0903 Canvas Talisman
+WP_A_0904 Thorolund Talisman
+WP_A_0905 Ivory Talisman
+WP_A_0907 Sunlight Talisman
+WP_A_0908 Darkmoon Talisman
+WP_A_0909 Velka's Talisman
+WP_A_0910 Sorcerer's Catalyst
+WP_A_0911 Pyromancy Flame
+WP_A_0911 Pyromancy Flame+1
+WP_A_0911 Pyromancy Flame+2
+WP_A_0911 Pyromancy Flame+3
+WP_A_0911 Pyromancy Flame+4
+WP_A_0911 Pyromancy Flame+5
+WP_A_0911 Pyromancy Flame+6
+WP_A_0911 Pyromancy Flame+7
+WP_A_0911 Pyromancy Flame+8
+WP_A_0911 Pyromancy Flame+9
+WP_A_0911 Pyromancy Flame+10
+WP_A_0911 Pyromancy Flame+11
+WP_A_0911 Pyromancy Flame+12
+WP_A_0911 Pyromancy Flame+13
+WP_A_0911 Pyromancy Flame+14
+WP_A_0911 Pyromancy Flame+15
+WP_A_0911 Pyromancy Flame (1)
+WP_A_0911 Pyromancy Flame+1 (1)
+WP_A_0911 Pyromancy Flame+2 (1)
+WP_A_0911 Pyromancy Flame+3 (1)
+WP_A_0911 Pyromancy Flame+4 (1)
+WP_A_0911 Pyromancy Flame+5 (1)
+WP_A_0912 Beatrice's Catalyst
+WP_A_0913 Tin Darkmoon Catalyst
+WP_A_0913 Tin Darkmoon Catalyst (1)
+WP_A_0913 Tin Darkmoon Catalyst (2)
+WP_A_0913 Tin Darkmoon Catalyst (3)
+WP_A_0913 Tin Darkmoon Catalyst (4)
+WP_A_0914 Oolacile Ivory Catalyst
+WP_A_0915 Tin Crystallization Ctlyst.
+WP_A_0916 Izalith Catalyst
+WP_A_1000 Caestus
+WP_A_1000 Crystal Caestus
+WP_A_1000 Lightning Caestus
+WP_A_1000 Raw Caestus
+WP_A_1000 Magic Caestus
+WP_A_1000 Enchanted Caestus
+WP_A_1000 Divine Caestus
+WP_A_1000 Occult Caestus
+WP_A_1000 Fire Caestus
+WP_A_1000 Chaos Caestus
+WP_A_1002 Claw
+WP_A_1002 Crystal Claw
+WP_A_1002 Lightning Claw
+WP_A_1002 Raw Claw
+WP_A_1002 Magic Claw
+WP_A_1002 Enchanted Claw
+WP_A_1002 Divine Claw
+WP_A_1002 Occult Claw
+WP_A_1002 Fire Claw
+WP_A_1002 Chaos Claw
+WP_A_1003 Dragon Bone Fist
+WP_A_1003 Dragon Bone Fist (1)
+WP_A_1004 Dark Hand
+WP_A_1005 Fists
+WP_A_1100 Pike
+WP_A_1100 Crystal Pike
+WP_A_1100 Lightning Pike
+WP_A_1100 Raw Pike
+WP_A_1100 Magic Pike
+WP_A_1100 Enchanted Pike
+WP_A_1100 Divine Pike
+WP_A_1100 Occult Pike
+WP_A_1100 Fire Pike
+WP_A_1100 Chaos Pike
+WP_A_1101 Silver Knight Spear
+WP_A_1102 Dragonslayer Spear
+WP_A_1102 Dragonslayer Spear (1)
+WP_A_1102 Dragonslayer Spear (2)
+WP_A_1102 Dragonslayer Spear (3)
+WP_A_1102 Dragonslayer Spear (4)
+WP_A_1102 Dragonslayer Spear (5)
+WP_A_1102 Dragonslayer Spear (6)
+WP_A_1102 Dragonslayer Spear (7)
+WP_A_1102 Dragonslayer Spear (8)
+WP_A_1102 Dragonslayer Spear (9)
+WP_A_1103 Moonlight Butterfly Horn
+WP_A_1103 Moonlight Butterfly Horn (1)
+WP_A_1103 Moonlight Butterfly Horn (2)
+WP_A_1103 Moonlight Butterfly Horn (3)
+WP_A_1103 Moonlight Butterfly Horn (4)
+WP_A_1103 Moonlight Butterfly Horn (5)
+WP_A_1103 Moonlight Butterfly Horn (6)
+WP_A_1103 Moonlight Butterfly Horn (7)
+WP_A_1103 Moonlight Butterfly Horn (8)
+WP_A_1103 Moonlight Butterfly Horn (9)
+WP_A_1200 Whip
+WP_A_1200 Crystal Whip
+WP_A_1200 Lightning Whip
+WP_A_1200 Raw Whip
+WP_A_1200 Magic Whip
+WP_A_1200 Enchanted Whip
+WP_A_1200 Divine Whip
+WP_A_1200 Occult Whip
+WP_A_1200 Fire Whip
+WP_A_1200 Chaos Whip
+WP_A_1201 Notched Whip
+WP_A_1201 Crystal Notched Whip
+WP_A_1201 Lightning Notched Whip
+WP_A_1201 Raw Notched Whip
+WP_A_1201 Magic Notched Whip
+WP_A_1201 Enchanted Notched Whip
+WP_A_1201 Divine Notched Whip
+WP_A_1201 Occult Notched Whip
+WP_A_1201 Fire Notched Whip
+WP_A_1201 Chaos Notched Whip
+WP_A_1300 Short Bow
+WP_A_1300 Crystal Short Bow
+WP_A_1300 Lightning Short Bow
+WP_A_1300 Raw Short Bow
+WP_A_1300 Magic Short Bow
+WP_A_1300 Enchanted Short Bow
+WP_A_1300 Divine Short Bow
+WP_A_1300 Occult Short Bow
+WP_A_1300 Fire Short Bow
+WP_A_1300 Chaos Short Bow
+WP_A_1301 Longbow
+WP_A_1301 Crystal Longbow
+WP_A_1301 Lightning Longbow
+WP_A_1301 Raw Longbow
+WP_A_1301 Magic Longbow
+WP_A_1301 Enchanted Longbow
+WP_A_1301 Divine Longbow
+WP_A_1301 Occult Longbow
+WP_A_1301 Fire Longbow
+WP_A_1301 Chaos Longbow
+WP_A_1302 Composite Bow
+WP_A_1302 Crystal Composite Bow
+WP_A_1302 Lightning Composite Bow
+WP_A_1302 Raw Composite Bow
+WP_A_1302 Magic Composite Bow
+WP_A_1302 Enchanted Composite Bow
+WP_A_1302 Divine Composite Bow
+WP_A_1302 Occult Composite Bow
+WP_A_1302 Fire Composite Bow
+WP_A_1302 Chaos Composite Bow
+WP_A_1304 Black Bow of Pharis
+WP_A_1304 Crystal Black Bow of Pharis
+WP_A_1304 Ltng. Black Bow of Pharis
+WP_A_1304 Raw Black Bow of Pharis
+WP_A_1304 Magic Black Bow of Pharis
+WP_A_1304 Ench. Black Bow of Pharis
+WP_A_1304 Divine Black Bow of Pharis
+WP_A_1304 Occult Black Bow of Pharis
+WP_A_1304 Fire Black Bow of Pharis
+WP_A_1304 Chaos Black Bow of Pharis
+WP_A_1305 Darkmoon Bow
+WP_A_1305 Darkmoon Bow (1)
+WP_A_1305 Darkmoon Bow (2)
+WP_A_1305 Darkmoon Bow (3)
+WP_A_1360 Dragonslayer Greatbow
+WP_A_1399 Standard Arrow
+WP_A_1399 Large Arrow
+WP_A_1399 Feather Arrow
+WP_A_1399 Fire Arrow
+WP_A_1399 Poison Arrow
+WP_A_1399 Moonlight Arrow
+WP_A_1399 Wooden Arrow
+WP_A_1399 Dragonslayer Arrow
+WP_A_1401 Light Crossbow
+WP_A_1401 Crystal Light Crossbow
+WP_A_1401 Lightning Light Crossbow
+WP_A_1401 Magic Light Crossbow
+WP_A_1401 Divine Light Crossbow
+WP_A_1401 Fire Light Crossbow
+WP_A_1402 Heavy Crossbow
+WP_A_1402 Crystal Heavy Crossbow
+WP_A_1402 Lightning Heavy Crossbow
+WP_A_1402 Magic Heavy Crossbow
+WP_A_1402 Divine Heavy Crossbow
+WP_A_1402 Fire Heavy Crossbow
+WP_A_1404 Sniper Crossbow
+WP_A_1404 Crystal Sniper Crossbow
+WP_A_1404 Lightning Sniper Crossbow
+WP_A_1404 Magic Sniper Crossbow
+WP_A_1404 Divine Sniper Crossbow
+WP_A_1404 Fire Sniper Crossbow
+WP_A_1405 Avelyn
+WP_A_1405 Crystal Avelyn
+WP_A_1405 Lightning Avelyn
+WP_A_1405 Magic Avelyn
+WP_A_1405 Divine Avelyn
+WP_A_1405 Fire Avelyn
+WP_A_1501 Target Shield
+WP_A_1501 Crystal Target Shield
+WP_A_1501 Lightning Target Shield
+WP_A_1501 Magic Target Shield
+WP_A_1501 Divine Target Shield
+WP_A_1501 Fire Target Shield
+WP_A_1502 Hollow Soldier Shield
+WP_A_1502 Crys. Hollow Soldier Shield
+WP_A_1502 Ltng. Hollow Soldier Shield
+WP_A_1502 Magic Hollow Soldier Shield
+WP_A_1502 Div. Hollow Soldier Shield
+WP_A_1502 Fire Hollow Soldier Shield
+WP_A_1503 Cracked Round Shield
+WP_A_1503 Crys. Cracked Round Shield
+WP_A_1503 Ltng. Cracked Round Shield
+WP_A_1503 Magic Cracked Round Shield
+WP_A_1503 Divine Cracked Round Shield
+WP_A_1503 Fire Cracked Round Shield
+WP_A_1504 Balder Shield
+WP_A_1504 Crystal Balder Shield
+WP_A_1504 Lightning Balder Shield
+WP_A_1504 Magic Balder Shield
+WP_A_1504 Divine Balder Shield
+WP_A_1504 Fire Balder Shield
+WP_A_1505 Tower Shield
+WP_A_1505 Crystal Tower Shield
+WP_A_1505 Lightning Tower Shield
+WP_A_1505 Magic Tower Shield
+WP_A_1505 Divine Tower Shield
+WP_A_1505 Fire Tower Shield
+WP_A_1507 Spiked Shield
+WP_A_1507 Crystal Spiked Shield
+WP_A_1507 Lightning Spiked Shield
+WP_A_1507 Magic Spiked Shield
+WP_A_1507 Divine Spiked Shield
+WP_A_1507 Fire Spiked Shield
+WP_A_1509 Crystal Shield
+WP_A_1510 Stone Greatshield
+WP_A_1511 Sunlight Shield
+WP_A_1511 Crystal Sunlight Shield
+WP_A_1511 Lightning Sunlight Shield
+WP_A_1511 Magic Sunlight Shield
+WP_A_1511 Divine Sunlight Shield
+WP_A_1511 Fire Sunlight Shield
+WP_A_1513 Tower Kite Shield
+WP_A_1513 Crystal Tower Kite Shield
+WP_A_1513 Lightning Tower Kite Shield
+WP_A_1513 Magic Tower Kite Shield
+WP_A_1513 Divine Tower Kite Shield
+WP_A_1513 Fire Tower Kite Shield
+WP_A_1514 Black Knight Shield
+WP_A_1515 Heater Shield
+WP_A_1515 Crystal Heater Shield
+WP_A_1515 Lightning Heater Shield
+WP_A_1515 Magic Heater Shield
+WP_A_1515 Divine Heater Shield
+WP_A_1515 Fire Heater Shield
+WP_A_1516 Knight Shield
+WP_A_1516 Crystal Knight Shield
+WP_A_1516 Lightning Knight Shield
+WP_A_1516 Magic Knight Shield
+WP_A_1516 Divine Knight Shield
+WP_A_1516 Fire Knight Shield
+WP_A_1517 Grass Crest Shield
+WP_A_1517 Crystal Grass Crest Shield
+WP_A_1517 Ltng. Grass Crest Shield
+WP_A_1517 Magic Grass Crest Shield
+WP_A_1517 Divine Grass Crest Shield
+WP_A_1517 Fire Grass Crest Shield
+WP_A_1518 Red and White Round Shield
+WP_A_1518 Crystal R&W Round Shield
+WP_A_1518 Lightning R&W Round Shield
+WP_A_1518 Magic R&W Round Shield
+WP_A_1518 Divine R&W Round Shield
+WP_A_1518 Fire R&W Round Shield
+WP_A_1519 Iron Round Shield
+WP_A_1519 Crystal Iron Round Shield
+WP_A_1519 Lightning Iron Round Shield
+WP_A_1519 Magic Iron Round Shield
+WP_A_1519 Divine Iron Round Shield
+WP_A_1519 Fire Iron Round Shield
+WP_A_1520 Spider Shield
+WP_A_1520 Crystal Spider Shield
+WP_A_1520 Lightning Spider Shield
+WP_A_1520 Magic Spider Shield
+WP_A_1520 Divine Spider Shield
+WP_A_1520 Fire Spider Shield
+WP_A_1521 East-West Shield
+WP_A_1521 Crystal East-West Shield
+WP_A_1521 Lightning East-West Shield
+WP_A_1521 Magic East-West Shield
+WP_A_1521 Divine East-West Shield
+WP_A_1521 Fire East-West Shield
+WP_A_1522 Wooden Shield
+WP_A_1522 Crystal Wooden Shield
+WP_A_1522 Lightning Wooden Shield
+WP_A_1522 Magic Wooden Shield
+WP_A_1522 Divine Wooden Shield
+WP_A_1522 Fire Wooden Shield
+WP_A_1523 Plank Shield
+WP_A_1523 Crystal Plank Shield
+WP_A_1523 Lightning Plank Shield
+WP_A_1523 Magic Plank Shield
+WP_A_1523 Divine Plank Shield
+WP_A_1523 Fire Plank Shield
+WP_A_1524 Large Leather Shield
+WP_A_1524 Crys. Large Leather Shield
+WP_A_1524 Ltng. Large Leather Shield
+WP_A_1524 Magic Large Leather Shield
+WP_A_1524 Divine Large Leather Shield
+WP_A_1524 Fire Large Leather Shield
+WP_A_1525 Small Leather Shield
+WP_A_1525 Crys. Small Leather Shield
+WP_A_1525 Ltng. Small Leather Shield
+WP_A_1525 Magic Small Leather Shield
+WP_A_1525 Divine Small Leather Shield
+WP_A_1525 Fire Small Leather Shield
+WP_A_1526 Leather Shield
+WP_A_1526 Crystal Leather Shield
+WP_A_1526 Lightning Leather Shield
+WP_A_1526 Magic Leather Shield
+WP_A_1526 Divine Leather Shield
+WP_A_1526 Fire Leather Shield
+WP_A_1527 Giant Shield
+WP_A_1527 Crystal Giant Shield
+WP_A_1527 Lightning Giant Shield
+WP_A_1527 Magic Giant Shield
+WP_A_1527 Divine Giant Shield
+WP_A_1527 Fire Giant Shield
+WP_A_1528 Buckler
+WP_A_1528 Crystal Buckler
+WP_A_1528 Lightning Buckler
+WP_A_1528 Magic Buckler
+WP_A_1528 Divine Buckler
+WP_A_1528 Fire Buckler
+WP_A_1529 Eagle Shield
+WP_A_1529 Crystal Eagle Shield
+WP_A_1529 Lightning Eagle Shield
+WP_A_1529 Magic Eagle Shield
+WP_A_1529 Divine Eagle Shield
+WP_A_1529 Fire Eagle Shield
+WP_A_1530 Pierce Shield
+WP_A_1530 Crystal Pierce Shield
+WP_A_1530 Lightning Pierce Shield
+WP_A_1530 Magic Pierce Shield
+WP_A_1530 Divine Pierce Shield
+WP_A_1530 Fire Pierce Shield
+WP_A_1531 Crystal Ring Shield
+WP_A_1531 Crystal Ring Shield (1)
+WP_A_1531 Crystal Ring Shield (2)
+WP_A_1531 Crystal Ring Shield (3)
+WP_A_1531 Crystal Ring Shield (4)
+WP_A_1531 Crystal Ring Shield (5)
+WP_A_1531 Crystal Ring Shield (6)
+WP_A_1531 Crystal Ring Shield (7)
+WP_A_1531 Crystal Ring Shield (8)
+WP_A_1531 Crystal Ring Shield (9)
+WP_A_1531 Crystal Ring Shield (10)
+WP_A_1531 Crystal Ring Shield (11)
+WP_A_1531 Crystal Ring Shield (12)
+WP_A_1531 Crystal Ring Shield (13)
+WP_A_1531 Crystal Ring Shield (14)
+WP_A_1531 Crystal Ring Shield (15)
+WP_A_1531 Crystal Ring Shield (16)
+WP_A_1531 Crystal Ring Shield (17)
+WP_A_1531 Crystal Ring Shield (18)
+WP_A_1531 Crystal Ring Shield (19)
+WP_A_1531 Crystal Ring Shield (20)
+WP_A_1531 Crystal Ring Shield (21)
+WP_A_1531 Crystal Ring Shield (22)
+WP_A_1531 Crystal Ring Shield (23)
+WP_A_1531 Crystal Ring Shield (24)
+WP_A_1531 Crystal Ring Shield (25)
+WP_A_1531 Crystal Ring Shield (26)
+WP_A_1531 Crystal Ring Shield (27)
+WP_A_1531 Crystal Ring Shield (28)
+WP_A_1531 Crystal Ring Shield (29)
+WP_A_1531 Crystal Ring Shield (30)
+WP_A_1531 Crystal Ring Shield (31)
+WP_A_1531 Crystal Ring Shield (32)
+WP_A_1531 Crystal Ring Shield (33)
+WP_A_1531 Crystal Ring Shield (34)
+WP_A_1531 Crystal Ring Shield (35)
+WP_A_1531 Crystal Ring Shield (36)
+WP_A_1532 Havel's Greatshield
+WP_A_1533 Silver Knight Shield
+WP_A_1534 Greatshield of Artorias
+WP_A_1534 Greatshield of Artorias (1)
+WP_A_1534 Greatshield of Artorias (2)
+WP_A_1534 Greatshield of Artorias (3)
+WP_A_1534 Greatshield of Artorias (4)
+WP_A_1534 Greatshield of Artorias (5)
+WP_A_1534 Greatshield of Artorias (6)
+WP_A_1534 Greatshield of Artorias (7)
+WP_A_1534 Greatshield of Artorias (8)
+WP_A_1534 Greatshield of Artorias (9)
+WP_A_1534 Greatshield of Artorias (10)
+WP_A_1534 Greatshield of Artorias (11)
+WP_A_1534 Greatshield of Artorias (12)
+WP_A_1534 Greatshield of Artorias (13)
+WP_A_1534 Greatshield of Artorias (14)
+WP_A_1534 Greatshield of Artorias (15)
+WP_A_1534 Greatshield of Artorias (16)
+WP_A_1534 Greatshield of Artorias (17)
+WP_A_1534 Greatshield of Artorias (18)
+WP_A_1534 Greatshield of Artorias (19)
+WP_A_1534 Greatshield of Artorias (20)
+WP_A_1534 Greatshield of Artorias (21)
+WP_A_1534 Greatshield of Artorias (22)
+WP_A_1534 Greatshield of Artorias (23)
+WP_A_1534 Greatshield of Artorias (24)
+WP_A_1534 Greatshield of Artorias (25)
+WP_A_1534 Greatshield of Artorias (26)
+WP_A_1534 Greatshield of Artorias (27)
+WP_A_1534 Greatshield of Artorias (28)
+WP_A_1534 Greatshield of Artorias (29)
+WP_A_1534 Greatshield of Artorias (30)
+WP_A_1534 Greatshield of Artorias (31)
+WP_A_1534 Greatshield of Artorias (32)
+WP_A_1534 Greatshield of Artorias (33)
+WP_A_1534 Greatshield of Artorias (34)
+WP_A_1534 Greatshield of Artorias (35)
+WP_A_1534 Greatshield of Artorias (36)
+WP_A_1535 Crest Shield
+WP_A_1536 Warrior's Round Shield
+WP_A_1536 Crys. Warrior's Rd. Shield
+WP_A_1536 Ltng. Warrior's Rd. Shield
+WP_A_1536 Magic Warrior's Rd. Shield
+WP_A_1536 Div. Warrior's Round Shield
+WP_A_1536 Fire Warrior's Round Shield
+WP_A_1537 Caduceus Kite Shield
+WP_A_1537 Crys. Caduceus Kite Shield
+WP_A_1537 Ltng. Caduceus Kite Shield
+WP_A_1537 Magic Caduceus Kite Shield
+WP_A_1537 Divine Caduceus Kite Shield
+WP_A_1537 Fire Caduceus Kite Shield
+WP_A_1538 Caduceus Round Shield
+WP_A_1538 Crys. Caduceus Round Shield
+WP_A_1538 Ltng. Caduceus Round Shield
+WP_A_1538 Magic Caduceus Round Shield
+WP_A_1538 Div. Caduceus Round Shield
+WP_A_1538 Fire Caduceus Round Shield
+WP_A_1539 Gargoyle's Shield
+WP_A_1539 Crystal Gargoyle's Shield
+WP_A_1539 Lightning Gargoyle's Shield
+WP_A_1539 Magic Gargoyle's Shield
+WP_A_1539 Divine Gargoyle's Shield
+WP_A_1539 Fire Gargoyle's Shield
+WP_A_1540 Bonewheel Shield
+WP_A_1540 Crystal Bonewheel Shield
+WP_A_1540 Lightning Bonewheel Shield
+WP_A_1540 Magic Bonewheel Shield
+WP_A_1540 Divine Bonewheel Shield
+WP_A_1540 Fire Bonewheel Shield
+WP_A_1541 Dragon Crest Shield
+WP_A_1542 Effigy Shield
+WP_A_1542 Crystal Effigy Shield
+WP_A_1542 Lightning Effigy Shield
+WP_A_1542 Magic Effigy Shield
+WP_A_1542 Divine Effigy Shield
+WP_A_1542 Fire Effigy Shield
+WP_A_1543 Sanctus
+WP_A_1543 Crystal Sanctus
+WP_A_1543 Lightning Sanctus
+WP_A_1543 Magic Sanctus
+WP_A_1543 Divine Sanctus
+WP_A_1543 Fire Sanctus
+WP_A_1544 Bloodshield
+WP_A_1544 Crystal Bloodshield
+WP_A_1544 Lightning Bloodshield
+WP_A_1544 Magic Bloodshield
+WP_A_1544 Divine Bloodshield
+WP_A_1544 Fire Bloodshield
+WP_A_1545 Black Iron Greatshield
+WP_A_1545 Crys. Black Iron Grtshld.
+WP_A_1545 Ltng. Black Iron Grtshld.
+WP_A_1545 Mag. Black Iron Grtshld.
+WP_A_1545 Div. Black Iron Greatshield
+WP_A_1545 Fire Black Iron Greatshield
+WP_A_1700 Standard Bolt
+WP_A_1700 Heavy Bolt
+WP_A_1700 Sniper Bolt
+WP_A_1700 Wood Bolt
+WP_A_1700 Lightning Bolt
+WP_A_1801 Skull Lantern
+WP_A_2001 <null>
+WP_A_2002 <null> (1)
+WP_A_2003 <null> (2)
+WP_A_2004 <null> (3)
+WP_A_2005 <null> (4)
+WP_A_2006 <null> (5)
+WP_A_2007 <null> (6)
+WP_A_2008 <null> (7)
+WP_A_2009 <null> (8)
+WP_A_2010 <null> (9)
+WP_A_2011 <null> (10)
+WP_A_2012 <null> (11)
+WP_A_2013 <null> (12)
+WP_A_2014 <null> (13)
+WP_A_2015 <null> (14)
+WP_A_2016 <null> (15)
+WP_A_2017 <null> (16)
+WP_A_2018 <null> (17)
+WP_A_2019 <null> (18)
+WP_A_2020 <null> (19)
+WP_A_2021 <null> (20)
+WP_A_2022 <null> (21)
+WP_A_2023 <null> (22)
+WP_A_2024 <null> (23)
+WP_A_2025 Arrow
+WP_A_2026 Bolt

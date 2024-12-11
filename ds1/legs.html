@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Spectral, Arial, sans-serif;
+            text-align: center;
+			width:300px;
+			background-color:#222222;
+        }
+		h1 {
+		font-size: 14px;
+		color:#777;
+		margin: 0px;
+		}
+        model-viewer {
+            width: 400px;
+            height: 400px;
+        }
+        /* Hide the default loading bar */
+        model-viewer::part(progress-bar) {
+            display: none;
+        } 
+    /* Custom context menu styling */
+    #context-menu {
+        display: none;
+        position: absolute;
+        background-color: #111111; /* Dark background */
+        color: #666; /* Light gray text */
+        border: 1px solid #444; /* Subtle border */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+        z-index: 1000;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 4px; /* Rounded corners */
+        overflow: hidden;
+    }
+    #context-menu li {
+        padding: 10px 15px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    #context-menu li:hover {
+        background-color: #444; /* Slightly lighter on hover */
+        color: #fff; /* White text on hover */
+    }
+</style>
+
+</head>
+<body>
+    <h1 id="header">3D Model Viewer</h1>
+    <model-viewer 
+        id="viewer" 
+        auto-rotate 
+        auto-rotate-speed="2" 
+        camera-controls 
+        interaction-prompt="none" 
+        alt="A 3D model"
+        style="width: 300px; height: 300px;">
+    </model-viewer>
+    <ul id="context-menu">
+        <li id="download-model">Download Model</li>
+        <li id="view-larger">View Larger</li>
+    </ul>
+
+    <script>
+        const viewer = document.getElementById('viewer');
+        const contextMenu = document.getElementById('context-menu');
+        const downloadOption = document.getElementById('download-model');
+        const viewLargerOption = document.getElementById('view-larger');
+
+        // Get the model filename from the query parameter "model"
+        const urlParams = new URLSearchParams(window.location.search);
+        const model = urlParams.get('model'); // E.g., ?model=Dagger.glb
+
+        if (model) {
+            viewer.setAttribute('src', `./legs/${model}`);
+
+            // Extract the model name (e.g., "Dagger" from "Dagger.glb")
+            const modelName = model.replace('.glb', '');
+            // Update the header text
+            const header = document.getElementById('header');
+            header.textContent = `${modelName} - 3D model`;
+
+            // Add download functionality
+            downloadOption.addEventListener('click', () => {
+                const link = document.createElement('a');
+                link.href = `./legs/${model}`;
+                link.download = model;
+                link.click();
+                hideContextMenu();
+            });
+
+            // Add view larger functionality
+            viewLargerOption.addEventListener('click', () => {
+                const largerViewerUrl = `viewer.html?model=${model}`;
+                window.open(largerViewerUrl, '_blank', 'width=1000,height=1000');
+                hideContextMenu();
+            });
+        } else {
+            console.error("No model specified in the URL. Use ?model=filename.glb");
+        }
+
+        // Show custom context menu on right-click
+        viewer.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            contextMenu.style.display = 'block';
+            contextMenu.style.left = `${event.pageX}px`;
+            contextMenu.style.top = `${event.pageY}px`;
+        });
+
+        // Hide context menu on click outside
+        document.addEventListener('click', () => {
+            hideContextMenu();
+        });
+
+        function hideContextMenu() {
+            contextMenu.style.display = 'none';
+        }
+		
+    </script>
+</body>
+</html>
