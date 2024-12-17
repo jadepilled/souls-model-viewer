@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+<title>Weapon Viewer</title>
+<style>
+  body {
+    background-color: #222222;
+    color: #ffffff;
+    font-family: Spectral, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .widget-container {
+    width: 200px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .item-icon-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .enchantment-select {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #333333;
+    color: #ffffff;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .upgrade-toggle {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #333333;
+    color: #ffffff;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 10;
+  }
+  .upgrade-prompt {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    background: #000000aa;
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 20;
+  }
+  #item-icon {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  table {
+    border-collapse: collapse;
+    width: 200px;
+    background: #333333;
+    color: #ffffff;
+    margin: 0 auto;
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+  th, td {
+    padding: 3px; /* Slightly shorter height */
+    border-bottom: 1px solid #555555;
+    text-align: center;
+    font-size: 0.9em;
+    vertical-align: middle;
+    line-height: 1.0;
+  }
+  .stat-icon {
+    vertical-align: middle;
+  }
+
+  .stat-text {
+    transition: color 0.5s ease;
+    color: #ffffff;
+  }
+
+  .fade-text .stat-text {
+    color: transparent;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <div class="item-icon-container">
+    <img id="item-icon" src="" alt="Weapon Icon" style="max-width: 150px; max-height: 150px;"/>
+    <select class="enchantment-select" id="enchantment-select" style="display:none;"></select>
+    <div class="upgrade-toggle" id="upgrade-toggle" style="display:none;">Base</div>
+    <div class="upgrade-prompt" id="upgrade-prompt">Weapon cannot be upgraded</div>
+  </div>
+  <table id="stats-table"></table>
+</div>
+
+<script>
+// Utility functions
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+function preloadAndSetIcon(newPath, fallbackPath=null) {
+  const tempImg = new Image();
+  tempImg.onload = () => {
+    itemIcon.style.opacity = 0;
+    setTimeout(() => {
+      itemIcon.src = tempImg.src;
+      requestAnimationFrame(() => {
+        itemIcon.style.opacity = 1;
+      });
+    }, 200);
+  };
+  tempImg.onerror = () => {
+    if (fallbackPath) {
+      const fallbackImg = new Image();
+      fallbackImg.onload = () => {
+        itemIcon.style.opacity = 0;
+        setTimeout(() => {
+          itemIcon.src = fallbackImg.src;
+          itemIcon.style.opacity = 1;
+        },200);
+      };
+      fallbackImg.src = fallbackPath;
+    }
+  };
+  tempImg.src = newPath;
+}
+
+function showUpgradePrompt(message) {
+  upgradePrompt.textContent = message;
+  upgradePrompt.style.opacity = 1;
+  upgradePrompt.style.pointerEvents = 'auto';
+  setTimeout(() => {
+    upgradePrompt.style.opacity = 0;
+    upgradePrompt.style.pointerEvents = 'none';
+  }, 2000);
+}
+
+function fadeTextOutAndIn(updateFunc) {
+  const container = document.querySelector('.widget-container');
+  container.classList.add('fade-text');
+  setTimeout(() => {
+    updateFunc();
+    requestAnimationFrame(() => {
+      container.classList.remove('fade-text');
+    });
+  }, 250);
+}
+
+// Known max upgrades by enchant type
+const enchantMaxLevelMap = {
+  "Base": 15,
+  "Crystal": 5,
+  "Lightning": 5,
+  "Raw": 5,
+  "Magic": 10,
+  "Enchanted": 5,
+  "Divine": 10,
+  "Occult": 5,
+  "Fire": 10,
+  "Chaos": 5
+};
+
+const statIcons = {
+  "STRad": { alt: "Strength Correction", icon: "STRad.png" },
+  "DEXad": { alt: "Dexterity Correction", icon: "DEXad.png" },
+  "INTad": { alt: "Intelligence Correction", icon: "INTad.png" },
+  "FAIad": { alt: "Faith Correction", icon: "FAIad.png" },
+  "aPHYS": { alt: "Physical Attack", icon: "aPHYS.png" },
+  "aMAG":  { alt: "Magic Attack", icon: "aMAG.png" },
+  "aFIR":  { alt: "Fire Attack", icon: "aFIR.png" },
+  "aLIT":  { alt: "Lightning Attack", icon: "aLIT.png" },
+  "STAM": { alt: "Stamina Damage", icon: "STAM.png" },
+  "POI": { alt: "Poise Damage", icon: "POI.png" },
+  "CRIT": { alt: "Crit Bonus", icon: "CRIT.png" },
+  "WGT": { alt: "Weight", icon: "WGT.png" },
+  "DPHYS": { alt: "Physical Defence", icon: "DPHYS.png" },
+  "DMAG": { alt: "Magic Defence", icon: "DMAG.png" },
+  "DFIR": { alt: "Fire Defence", icon: "DFIR.png" },
+  "DLIT": { alt: "Lightning Defence", icon: "DLIT.png" },
+  "STA": { alt: "Stability", icon: "STA.png" },
+  "DUR": { alt: "Durability", icon: "DUR.png" }
+};
+
+let baseWeaponData = null;
+let upgradedWeaponData = null;
+
+let baseName = "";
+let currentEnchantment = null;
+let currentUpgradeState = 'base';
+
+const statOrder = [
+  ["REQ_STR","REQ_DEX","REQ_INT","REQ_FAI"],
+  ["StrC","DexC","IntC","FaiC"],
+  ["APhys","AMag","AFire","ALit"],
+  ["AStam","Poi","Crit","Wgt"],
+  ["PhysD","MagD","FirD","LitD"],
+  ["","Sta","Dur",""]
+];
+
+let statCells = [];
+
+function mapStatToIcon(statKey, value) {
+  const mapping = {
+    "StrC": { icon: "STRad" },
+    "DexC": { icon: "DEXad" },
+    "IntC": { icon: "INTad" },
+    "FaiC": { icon: "FAIad" },
+    "APhys": { icon: "aPHYS" },
+    "AMag": { icon: "aMAG" },
+    "AFire": { icon: "aFIR" },
+    "ALit": { icon: "aLIT" },
+    "AStam": { icon: "STAM" },
+    "Poi": { icon: "POI" },
+    "Crit": { icon: "CRIT" },
+    "Wgt": { icon: "WGT" },
+    "PhysD": { icon: "DPHYS" },
+    "MagD": { icon: "DMAG" },
+    "FirD": { icon: "DFIR" },
+    "LitD": { icon: "DLIT" },
+    "Sta": { icon: "STA" },
+    "Dur": { icon: "DUR" }
+  };
+
+  if (mapping[statKey]) {
+    const iconKey = mapping[statKey].icon;
+    const alt = statIcons[iconKey].alt;
+    return { icon: `weapon_icons/${statIcons[iconKey].icon}`, alt: alt, value: value };
+  }
+
+  return { icon: "", alt: statKey, value: value };
+}
+
+function createTableStructure() {
+  const statsTable = document.getElementById("stats-table");
+  while(statsTable.firstChild) statsTable.removeChild(statsTable.firstChild);
+
+  statCells = [];
+  statOrder.forEach((rowStats, rowIndex) => {
+    const tr = document.createElement("tr");
+    const rowCells = [];
+    rowStats.forEach((cellKey) => {
+      const td = document.createElement("td");
+      td.innerHTML = '<span class="stat-text"></span>';
+      tr.appendChild(td);
+      rowCells.push(td);
+    });
+    statCells.push(rowCells);
+    statsTable.appendChild(tr);
+  });
+}
+
+function updateTableCells(variantData) {
+  const reqSplit = variantData.stats.Req.split("/");
+  const reqMapping = [
+    {icon:"STR", alt:"Strength Requirement", val:reqSplit[0]},
+    {icon:"DEX", alt:"Dexterity Requirement", val:reqSplit[1]},
+    {icon:"INT", alt:"Intelligence Requirement", val:reqSplit[2]},
+    {icon:"FAI", alt:"Faith Requirement", val:reqSplit[3]}
+  ];
+
+  for (let r = 0; r < statOrder.length; r++) {
+    for (let c = 0; c < statOrder[r].length; c++) {
+      const statKey = statOrder[r][c];
+      let cellData;
+      if (!statKey) {
+        cellData = { icon: "", alt: "", value: "" };
+      } else if (statKey.startsWith("REQ_")) {
+        let idx = 0;
+        if (statKey==="REQ_STR") idx=0;
+        if (statKey==="REQ_DEX") idx=1;
+        if (statKey==="REQ_INT") idx=2;
+        if (statKey==="REQ_FAI") idx=3;
+        cellData = {
+          icon: `weapon_icons/${reqMapping[idx].icon}.png`,
+          alt: reqMapping[idx].alt,
+          value: reqMapping[idx].val
+        };
+      } else {
+        let jsonKey = statKey;
+        if (statKey === "ALit") jsonKey = "ALitng"; 
+        const value = variantData.stats[jsonKey] !== undefined ? variantData.stats[jsonKey] : "";
+        cellData = mapStatToIcon(statKey, value);
+      }
+
+      const td = statCells[r][c];
+      let iconHTML = cellData.icon ? `<img class="stat-icon" src="${cellData.icon}" alt="${cellData.alt}" title="${cellData.alt}" height="24"/><br>` : '';
+      td.innerHTML = `${iconHTML}<span class="stat-text">${cellData.value}</span>`;
+    }
+  }
+}
+
+function findWeapon(data) {
+  return data.find(w => w.name.toLowerCase() === baseName.toLowerCase());
+}
+
+function findVariant(data, name) {
+  const weapon = findWeapon(data);
+  if(!weapon) return null;
+  return weapon.variants.find(v=>v.name.toLowerCase()===name.toLowerCase());
+}
+
+function getEnchantmentType(variantName) {
+  let parts = variantName.split(" ");
+  if (parts.length > 1) {
+    return parts[0];
+  } else {
+    return "Base";
+  }
+}
+
+function getUpgradedVariantName(variantName) {
+  const enchantType = getEnchantmentType(variantName);
+  const maxUp = enchantMaxLevelMap[enchantType];
+  if (!maxUp) return null; // No known max-up level for this enchant?
+
+  return `${variantName} +${maxUp}`;
+}
+
+function canUpgrade(variantName) {
+  // Check if corresponding upgraded variant exists
+  const upgradeVarName = getUpgradedVariantName(variantName);
+  if (!upgradeVarName) return false;
+
+  return findVariant(upgradedWeaponData, upgradeVarName) !== null;
+}
+
+function updateStatsView() {
+  fadeTextOutAndIn(() => {
+    let variantName = baseName; 
+    if(currentEnchantment && currentEnchantment !== "Base") {
+      variantName = currentEnchantment + " " + baseName; 
+    }
+
+    let baseVar = findVariant(baseWeaponData, variantName);
+    if(!baseVar) {
+      // No such base variant means enchantment invalid
+      showUpgradePrompt("This weapon cannot be enchanted");
+      currentEnchantment = null;
+      variantName = baseName;
+      baseVar = findVariant(baseWeaponData, variantName);
+      currentUpgradeState = 'base';
+      upgradeToggle.textContent = "Base";
+    }
+
+    if (currentUpgradeState === 'upgrade') {
+      if (!canUpgrade(variantName)) {
+        // fallback to base
+        showUpgradePrompt("This weapon cannot be upgraded");
+        currentUpgradeState = 'base';
+        upgradeToggle.textContent = "Base";
+        updateTableCells(baseVar);
+        return;
+      } else {
+        // Use the upgraded stats
+        const upVarName = getUpgradedVariantName(variantName);
+        const upgradedVar = findVariant(upgradedWeaponData, upVarName);
+        if(upgradedVar) {
+          updateTableCells(upgradedVar);
+          return;
+        } else {
+          // fallback
+          showUpgradePrompt("This weapon cannot be upgraded");
+          currentUpgradeState = 'base';
+          upgradeToggle.textContent = "Base";
+          updateTableCells(baseVar);
+          return;
+        }
+      }
+    }
+
+    // If we reach here, currentUpgradeState is base
+    updateTableCells(baseVar);
+  });
+}
+
+function toggleUpgrade() {
+  let variantName = baseName; 
+  if(currentEnchantment && currentEnchantment !== "Base") {
+    variantName = currentEnchantment + " " + baseName;
+  }
+
+  if (!canUpgrade(variantName)) {
+    showUpgradePrompt("This weapon cannot be upgraded");
+    return;
+  }
+
+  const upVarName = getUpgradedVariantName(variantName);
+  const enchantType = getEnchantmentType(variantName);
+  const maxUp = enchantMaxLevelMap[enchantType];
+
+  if (currentUpgradeState === 'base') {
+    currentUpgradeState = 'upgrade';
+    upgradeToggle.textContent = `+${maxUp}`;
+  } else {
+    currentUpgradeState = 'base';
+    upgradeToggle.textContent = "Base";
+  }
+  updateStatsView();
+}
+
+function onEnchantmentChange() {
+  const selected = enchantmentSelect.value;
+  currentEnchantment = (selected === "Base") ? null : selected;
+
+  let variantName = baseName; 
+  if(currentEnchantment) {
+    variantName = currentEnchantment + " " + baseName;
+  }
+
+  let varCheck = findVariant(baseWeaponData, variantName);
+  if(!varCheck) {
+    showUpgradePrompt("This weapon cannot be enchanted");
+    currentEnchantment = null;
+    enchantmentSelect.value = "Base";
+    variantName = baseName;
+    currentUpgradeState = 'base';
+    upgradeToggle.textContent = "Base";
+    updateStatsView();
+    return;
+  }
+
+  if (canUpgrade(variantName)) {
+    const enchantType = getEnchantmentType(variantName);
+    const maxUp = enchantMaxLevelMap[enchantType];
+    upgradeToggle.style.display = "block";
+    if (currentUpgradeState === 'upgrade') {
+      upgradeToggle.textContent = `+${maxUp}`;
+    } else {
+      upgradeToggle.textContent = "Base";
+    }
+  } else {
+    upgradeToggle.style.display = "block";
+    currentUpgradeState = 'base';
+    upgradeToggle.textContent = "Base";
+  }
+
+  updateStatsView();
+}
+
+// Load data
+Promise.all([
+  fetch('BaseWeapons.json').then(r=>r.json()),
+  fetch('UpgradedWeapons.json').then(r=>r.json())
+]).then(([baseData, upData]) => {
+  baseWeaponData = baseData;
+  upgradedWeaponData = upData;
+
+  let queryName = getQueryParam("item");
+  if(!queryName) return;
+
+  baseName = queryName;
+
+  itemIcon = document.getElementById("item-icon");
+  enchantmentSelect = document.getElementById("enchantment-select");
+  upgradeToggle = document.getElementById("upgrade-toggle");
+  upgradePrompt = document.getElementById("upgrade-prompt");
+
+  let iconPath = `icons/${baseName}.webp`;
+  preloadAndSetIcon(iconPath);
+
+  createTableStructure();
+
+  let baseWeapon = findWeapon(baseWeaponData);
+  if(!baseWeapon) return;
+  let currentBaseVariant = baseWeapon.variants.find(v => v.name.toLowerCase() === baseName.toLowerCase());
+  if(!currentBaseVariant) return;
+
+  // Determine valid enchantments
+  let enchantmentsAvailable = ["Base"];
+  baseWeapon.variants.forEach(v => {
+    if (v.name.toLowerCase() !== baseName.toLowerCase()) {
+      let parts = v.name.split(" ");
+      if (parts.length > 1) {
+        let enchant = parts[0]; 
+        const shortMap = {
+          "Crystal":"Crys.",
+          "Lightning":"Ltng.",
+          "Divine":"Div.",
+          "Enchanted":"Ench.",
+          "Occult":"Occ.",
+          "Magic":"Mag.",
+          "Fire":"Fire",
+          "Chaos":"Chaos",
+          "Raw":"Raw"
+        };
+        if (shortMap[enchant]) {
+          if(!enchantmentsAvailable.includes(shortMap[enchant])) {
+            enchantmentsAvailable.push(shortMap[enchant]);
+          }
+        }
+      }
+    }
+  });
+
+  if (enchantmentsAvailable.length > 1) {
+    enchantmentSelect.style.display = "block";
+    enchantmentsAvailable.forEach(e => {
+      const option = document.createElement("option");
+      let fullName = e;
+      if(e !== "Base"){
+        fullName = e.replace("Crys","Crystal")
+                    .replace("Ltng","Lightning")
+                    .replace("Div","Divine")
+                    .replace("Ench","Enchanted")
+                    .replace("Occ","Occult")
+                    .replace("Mag","Magic");
+        fullName = fullName.replace(".",""); // Remove trailing dots
+      }
+      option.value = (e === "Base") ? "Base" : fullName;
+      option.textContent = e;
+      enchantmentSelect.appendChild(option);
+    });
+    enchantmentSelect.addEventListener("change", onEnchantmentChange);
+    currentEnchantment = null; 
+  }
+
+  // Check if can upgrade base variant
+  if (canUpgrade(baseName)) {
+    upgradeToggle.style.display = "block";
+    upgradeToggle.textContent = "Base";
+    upgradeToggle.addEventListener("click", toggleUpgrade);
+  } else {
+    upgradeToggle.style.display = "block";
+    upgradeToggle.textContent = "Base";
+    upgradeToggle.addEventListener("click", () => {
+      showUpgradePrompt("This weapon cannot be upgraded");
+    });
+  }
+
+  updateStatsView();
+}).catch(error => {
+  console.error("Error loading data:", error);
+});
+</script>
+</body>
+</html>
