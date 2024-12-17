@@ -166,20 +166,6 @@ function fadeTextOutAndIn(updateFunc) {
   }, 250);
 }
 
-// Known max upgrades by enchant type
-const enchantMaxLevelMap = {
-  "Base": 15,
-  "Crystal": 5,
-  "Lightning": 5,
-  "Raw": 5,
-  "Magic": 10,
-  "Enchanted": 5,
-  "Divine": 10,
-  "Occult": 5,
-  "Fire": 10,
-  "Chaos": 5
-};
-
 const statIcons = {
   "STRad": { alt: "Strength Correction", icon: "STRad.png" },
   "DEXad": { alt: "Dexterity Correction", icon: "DEXad.png" },
@@ -255,17 +241,17 @@ function createTableStructure() {
   while(statsTable.firstChild) statsTable.removeChild(statsTable.firstChild);
 
   statCells = [];
-  statOrder.forEach((rowStats, rowIndex) => {
+  statOrder.forEach((rowStats) => {
     const tr = document.createElement("tr");
     const rowCells = [];
-    rowStats.forEach((cellKey) => {
+    rowStats.forEach(() => {
       const td = document.createElement("td");
       td.innerHTML = '<span class="stat-text"></span>';
       tr.appendChild(td);
       rowCells.push(td);
     });
-    statCells.push(rowCells);
     statsTable.appendChild(tr);
+    statCells.push(rowCells);
   });
 }
 
@@ -310,38 +296,39 @@ function updateTableCells(variantData) {
 }
 
 function findWeapon(data) {
-  return data.find(w => w.name.toLowerCase() === baseName.toLowerCase());
+  return data.find(w => w.name.toLowerCase().trim() === baseName.toLowerCase().trim());
 }
 
 function findVariant(data, name) {
   const weapon = findWeapon(data);
   if(!weapon) return null;
-  return weapon.variants.find(v=>v.name.toLowerCase()===name.toLowerCase());
+  return weapon.variants.find(v => v.name.toLowerCase().trim() === name.toLowerCase().trim());
 }
 
-function getEnchantmentType(variantName) {
-  let parts = variantName.split(" ");
-  if (parts.length > 1) {
-    return parts[0];
-  } else {
-    return "Base";
-  }
-}
+// Dynamically determine the max upgrade level by scanning upgraded variants
+function getMaxUpgradeLevelFromData(variantName) {
+  const weaponUp = findWeapon(upgradedWeaponData);
+  if(!weaponUp) return null;
 
-function getUpgradedVariantName(variantName) {
-  const enchantType = getEnchantmentType(variantName);
-  const maxUp = enchantMaxLevelMap[enchantType];
-  if (!maxUp) return null; // No known max-up level for this enchant?
-
-  return `${variantName} +${maxUp}`;
+  let maxLevel = null;
+  // We find any variant that starts with variantName and has +x
+  weaponUp.variants.forEach(uVar => {
+    if (uVar.name.toLowerCase().trim().startsWith(variantName.toLowerCase().trim())) {
+      const match = uVar.name.match(/\+(\d+)/);
+      if (match) {
+        const lvl = parseInt(match[1],10);
+        if(!maxLevel || lvl > maxLevel) {
+          maxLevel = lvl;
+        }
+      }
+    }
+  });
+  return maxLevel;
 }
 
 function canUpgrade(variantName) {
-  // Check if corresponding upgraded variant exists
-  const upgradeVarName = getUpgradedVariantName(variantName);
-  if (!upgradeVarName) return false;
-
-  return findVariant(upgradedWeaponData, upgradeVarName) !== null;
+  const maxUp = getMaxUpgradeLevelFromData(variantName);
+  return maxUp !== null;
 }
 
 function updateStatsView() {
@@ -353,17 +340,19 @@ function updateStatsView() {
 
     let baseVar = findVariant(baseWeaponData, variantName);
     if(!baseVar) {
-      // No such base variant means enchantment invalid
       showUpgradePrompt("This weapon cannot be enchanted");
       currentEnchantment = null;
       variantName = baseName;
       baseVar = findVariant(baseWeaponData, variantName);
       currentUpgradeState = 'base';
       upgradeToggle.textContent = "Base";
+      updateTableCells(baseVar);
+      return;
     }
 
     if (currentUpgradeState === 'upgrade') {
-      if (!canUpgrade(variantName)) {
+      const maxUp = getMaxUpgradeLevelFromData(variantName);
+      if (!maxUp) {
         // fallback to base
         showUpgradePrompt("This weapon cannot be upgraded");
         currentUpgradeState = 'base';
@@ -371,8 +360,8 @@ function updateStatsView() {
         updateTableCells(baseVar);
         return;
       } else {
-        // Use the upgraded stats
-        const upVarName = getUpgradedVariantName(variantName);
+        // Find the max up variant
+        const upVarName = `${variantName} +${maxUp}`;
         const upgradedVar = findVariant(upgradedWeaponData, upVarName);
         if(upgradedVar) {
           updateTableCells(upgradedVar);
@@ -399,14 +388,11 @@ function toggleUpgrade() {
     variantName = currentEnchantment + " " + baseName;
   }
 
-  if (!canUpgrade(variantName)) {
+  const maxUp = getMaxUpgradeLevelFromData(variantName);
+  if(!maxUp) {
     showUpgradePrompt("This weapon cannot be upgraded");
     return;
   }
-
-  const upVarName = getUpgradedVariantName(variantName);
-  const enchantType = getEnchantmentType(variantName);
-  const maxUp = enchantMaxLevelMap[enchantType];
 
   if (currentUpgradeState === 'base') {
     currentUpgradeState = 'upgrade';
@@ -439,9 +425,9 @@ function onEnchantmentChange() {
     return;
   }
 
-  if (canUpgrade(variantName)) {
-    const enchantType = getEnchantmentType(variantName);
-    const maxUp = enchantMaxLevelMap[enchantType];
+  // If enchantment exists, check upgrade again
+  const maxUp = getMaxUpgradeLevelFromData(variantName);
+  if(maxUp) {
     upgradeToggle.style.display = "block";
     if (currentUpgradeState === 'upgrade') {
       upgradeToggle.textContent = `+${maxUp}`;
@@ -468,7 +454,7 @@ Promise.all([
   let queryName = getQueryParam("item");
   if(!queryName) return;
 
-  baseName = queryName;
+  baseName = queryName.trim();
 
   itemIcon = document.getElementById("item-icon");
   enchantmentSelect = document.getElementById("enchantment-select");
@@ -482,14 +468,15 @@ Promise.all([
 
   let baseWeapon = findWeapon(baseWeaponData);
   if(!baseWeapon) return;
-  let currentBaseVariant = baseWeapon.variants.find(v => v.name.toLowerCase() === baseName.toLowerCase());
+  let currentBaseVariant = baseWeapon.variants.find(v => v.name.toLowerCase().trim() === baseName.toLowerCase().trim());
   if(!currentBaseVariant) return;
 
   // Determine valid enchantments
   let enchantmentsAvailable = ["Base"];
   baseWeapon.variants.forEach(v => {
-    if (v.name.toLowerCase() !== baseName.toLowerCase()) {
-      let parts = v.name.split(" ");
+    let vName = v.name.trim();
+    if (vName.toLowerCase() !== baseName.toLowerCase()) {
+      let parts = vName.split(" ");
       if (parts.length > 1) {
         let enchant = parts[0]; 
         const shortMap = {
