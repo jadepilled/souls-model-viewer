@@ -18,7 +18,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    position: relative;
+    position: relative; 
   }
   .item-icon-container {
     position: relative;
@@ -35,6 +35,7 @@
     border-radius: 3px;
     z-index: 10;
     cursor: pointer;
+    border: none;
   }
   .upgrade-toggle {
     position: absolute;
@@ -79,15 +80,22 @@
     word-wrap: break-word;
   }
   th, td {
-    padding: 3px; /* Slightly shorter height */
+    padding: 3px;
     border-bottom: 1px solid #555555;
     text-align: center;
     font-size: 0.9em;
     vertical-align: middle;
     line-height: 1.0;
+    position: relative;
   }
   .stat-icon {
     vertical-align: middle;
+    display:inline-block; 
+    transition: transform 0.2s ease; 
+    transform-origin: center center;
+  }
+  .stat-icon:hover {
+    transform: scale(1.2);
   }
 
   .stat-text {
@@ -97,6 +105,28 @@
 
   .fade-text .stat-text {
     color: transparent;
+  }
+
+  /* Tooltip styling */
+  .custom-tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 3px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    z-index: 30;
+  }
+
+  /* We'll use a separate element for the arrow so we can position it */
+  .custom-tooltip-arrow {
+    position: absolute;
+    width:0; height:0;
+    border:6px solid transparent;
   }
 </style>
 </head>
@@ -109,6 +139,10 @@
     <div class="upgrade-prompt" id="upgrade-prompt">Weapon cannot be upgraded</div>
   </div>
   <table id="stats-table"></table>
+  <div class="custom-tooltip" id="custom-tooltip">
+    <div class="custom-tooltip-arrow" id="custom-tooltip-arrow"></div>
+    <span id="custom-tooltip-text"></span>
+  </div>
 </div>
 
 <script>
@@ -289,8 +323,8 @@ function updateTableCells(variantData) {
       }
 
       const td = statCells[r][c];
-      let iconHTML = cellData.icon ? `<img class="stat-icon" src="${cellData.icon}" alt="${cellData.alt}" title="${cellData.alt}" height="24"/><br>` : '';
-      td.innerHTML = `${iconHTML}<span class="stat-text">${cellData.value}</span>`;
+      let iconHTML = cellData.icon ? `<img class="stat-icon" src="${cellData.icon}" alt="${cellData.alt}" height="24"/>` : '';
+      td.innerHTML = iconHTML + (iconHTML ? '<br>' : '') + `<span class="stat-text">${cellData.value}</span>`;
     }
   }
 }
@@ -302,16 +336,13 @@ function findWeapon(data) {
 function findVariant(data, name) {
   const weapon = findWeapon(data);
   if(!weapon) return null;
-  return weapon.variants.find(v => v.name.toLowerCase().trim() === name.toLowerCase().trim());
+  return weapon.variants.find(v=>v.name.toLowerCase().trim()===name.toLowerCase().trim());
 }
 
-// Dynamically determine the max upgrade level by scanning upgraded variants
 function getMaxUpgradeLevelFromData(variantName) {
   const weaponUp = findWeapon(upgradedWeaponData);
   if(!weaponUp) return null;
-
   let maxLevel = null;
-  // We find any variant that starts with variantName and has +x
   weaponUp.variants.forEach(uVar => {
     if (uVar.name.toLowerCase().trim().startsWith(variantName.toLowerCase().trim())) {
       const match = uVar.name.match(/\+(\d+)/);
@@ -345,6 +376,7 @@ function updateStatsView() {
       variantName = baseName;
       baseVar = findVariant(baseWeaponData, variantName);
       currentUpgradeState = 'base';
+      // Button at bottom right should say "Base"
       upgradeToggle.textContent = "Base";
       updateTableCells(baseVar);
       return;
@@ -353,21 +385,18 @@ function updateStatsView() {
     if (currentUpgradeState === 'upgrade') {
       const maxUp = getMaxUpgradeLevelFromData(variantName);
       if (!maxUp) {
-        // fallback to base
         showUpgradePrompt("This weapon cannot be upgraded");
         currentUpgradeState = 'base';
         upgradeToggle.textContent = "Base";
         updateTableCells(baseVar);
         return;
       } else {
-        // Find the max up variant
         const upVarName = `${variantName} +${maxUp}`;
         const upgradedVar = findVariant(upgradedWeaponData, upVarName);
         if(upgradedVar) {
           updateTableCells(upgradedVar);
           return;
         } else {
-          // fallback
           showUpgradePrompt("This weapon cannot be upgraded");
           currentUpgradeState = 'base';
           upgradeToggle.textContent = "Base";
@@ -377,7 +406,7 @@ function updateStatsView() {
       }
     }
 
-    // If we reach here, currentUpgradeState is base
+    // currentUpgradeState is base
     updateTableCells(baseVar);
   });
 }
@@ -425,7 +454,6 @@ function onEnchantmentChange() {
     return;
   }
 
-  // If enchantment exists, check upgrade again
   const maxUp = getMaxUpgradeLevelFromData(variantName);
   if(maxUp) {
     upgradeToggle.style.display = "block";
@@ -441,6 +469,103 @@ function onEnchantmentChange() {
   }
 
   updateStatsView();
+}
+
+// Tooltip logic
+const customTooltip = document.getElementById('custom-tooltip');
+const customTooltipArrow = document.getElementById('custom-tooltip-arrow');
+const customTooltipText = document.getElementById('custom-tooltip-text');
+const widgetContainer = document.querySelector('.widget-container');
+let currentTd = null;
+
+document.addEventListener('mouseover', (e) => {
+  const td = e.target.closest('td');
+  if (td) {
+    const img = td.querySelector('.stat-icon');
+    if (img && img.alt) {
+      currentTd = td;
+      showTooltip(td, img.alt);
+    }
+  }
+});
+
+document.addEventListener('mouseout', (e) => {
+  if (currentTd && (!e.relatedTarget || !currentTd.contains(e.relatedTarget))) {
+    hideTooltip();
+    currentTd = null;
+  }
+});
+
+function showTooltip(td, text) {
+  customTooltipText.textContent = text;
+  customTooltip.style.opacity = '0';
+  customTooltip.style.display = 'block';
+  customTooltipArrow.style.border = '6px solid transparent'; 
+  customTooltipArrow.style.left = '50%';
+
+  const tdRect = td.getBoundingClientRect();
+  const containerRect = widgetContainer.getBoundingClientRect();
+  const padding = 5;
+
+  const tdCenterX = (tdRect.left + tdRect.width / 2) - containerRect.left;
+  // measure tooltip
+  customTooltip.style.left = '0px';
+  customTooltip.style.top = '0px';
+  const tipRect = customTooltip.getBoundingClientRect();
+  
+  // Try placing below
+  let tooltipX = tdCenterX - tipRect.width/2;
+  let tooltipY = (tdRect.bottom - containerRect.top) + 8;
+  let placeAbove = false;
+
+  // Clamp horizontally
+  if (tooltipX < padding) tooltipX = padding;
+  if (tooltipX + tipRect.width > containerRect.width - padding) {
+    tooltipX = containerRect.width - padding - tipRect.width;
+  }
+
+  // Check if fits below
+  if (tooltipY + tipRect.height + padding > containerRect.height) {
+    // place above
+    tooltipY = (tdRect.top - containerRect.top) - tipRect.height - 8;
+    if (tooltipY < padding) {
+      tooltipY = padding;
+    }
+    placeAbove = true;
+  }
+
+  customTooltip.style.left = tooltipX + 'px';
+  customTooltip.style.top = tooltipY + 'px';
+
+  // Now position arrow so it points to tdCenterX
+  // arrow should point to tdCenterX relative to tooltip
+  const finalTipRect = customTooltip.getBoundingClientRect();
+  let arrowX = tdCenterX - finalTipRect.left; 
+  // clamp arrowX so arrow stays within tooltip
+  if (arrowX < 12) arrowX = 12; 
+  if (arrowX > finalTipRect.width - 12) arrowX = finalTipRect.width - 12;
+
+  customTooltipArrow.style.left = (arrowX - 6) + 'px';
+
+  if (placeAbove) {
+    // Arrow points down (▼)
+    customTooltipArrow.style.top = ''; 
+    customTooltipArrow.style.bottom = '-12px';
+    customTooltipArrow.style.border = '6px solid transparent';
+    customTooltipArrow.style.borderTopColor = 'rgba(0,0,0,0.8)';
+  } else {
+    // Arrow points up (▲)
+    customTooltipArrow.style.bottom = ''; 
+    customTooltipArrow.style.top = '-12px';
+    customTooltipArrow.style.border = '6px solid transparent';
+    customTooltipArrow.style.borderBottomColor = 'rgba(0,0,0,0.8)';
+  }
+
+  customTooltip.style.opacity = '1';
+}
+
+function hideTooltip() {
+  customTooltip.style.opacity = '0';
 }
 
 // Load data
@@ -471,7 +596,6 @@ Promise.all([
   let currentBaseVariant = baseWeapon.variants.find(v => v.name.toLowerCase().trim() === baseName.toLowerCase().trim());
   if(!currentBaseVariant) return;
 
-  // Determine valid enchantments
   let enchantmentsAvailable = ["Base"];
   baseWeapon.variants.forEach(v => {
     let vName = v.name.trim();
@@ -511,20 +635,20 @@ Promise.all([
                     .replace("Ench","Enchanted")
                     .replace("Occ","Occult")
                     .replace("Mag","Magic");
-        fullName = fullName.replace(".",""); // Remove trailing dots
+        fullName = fullName.replace(".",""); 
       }
       option.value = (e === "Base") ? "Base" : fullName;
-      option.textContent = e;
+      // For dropdown Base -> Norm.
+      option.textContent = (e === "Base") ? "Norm." : e;
       enchantmentSelect.appendChild(option);
     });
     enchantmentSelect.addEventListener("change", onEnchantmentChange);
     currentEnchantment = null; 
   }
 
-  // Check if can upgrade base variant
   if (canUpgrade(baseName)) {
     upgradeToggle.style.display = "block";
-    upgradeToggle.textContent = "Base";
+    upgradeToggle.textContent = "Base"; // revert toggle text to "Base"
     upgradeToggle.addEventListener("click", toggleUpgrade);
   } else {
     upgradeToggle.style.display = "block";
